@@ -1,0 +1,6 @@
+# Local test harness and previews — never published.
+test.js
+uitest.py
+preview-*.png
+__pycache__/
+.DS_Store

@@ -1,0 +1,127 @@
+# OneTap Market · 원탭 마켓
+
+A two-market shelf: **verified no-signup web apps**, readable in English and Korean,
+with a liveness check stamped on every card. It is the global-facing counterpart of
+`apps/portal-hub` (the Korean-only hub) — same catalogue, different job: a distribution
+surface that outside makers can submit to.
+
+- Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
+- Version: **1.0.0** (2026-11-22)
+- Files: `index.html` · `privacy.html` · `styles.css` · `i18n.js` · `core.js` · `app.js`
+  · `data/apps.json` · `data/apps.bundle.js` · `scripts/` · `.github/workflows/daily-verify.yml`
+  · `assets/fonts/` (local PlexKR, no CDN)
+
+## What makes it different from a link list
+
+1. **Three badges, backed by data** — `Live checked` (HTTP 200 from the checker),
+   `No signup` (the URL opens the app, not a gate), `Free` or `Free · BYOK`
+   (own API key optional). The one paid service in the catalogue is labelled
+   `Paid service` instead, so the badge never lies.
+2. **EN / KO in one tap** — the whole interface, the card copy, the badges, the filters,
+   the submission form and the page `<title>`/meta description switch. Browser language
+   decides the first load; the choice is remembered in `localStorage` (`otm.lang`).
+3. **26 seeded listings** — 23 Korean + 3 global English (`ics-viewer-online`,
+   `invoice-receipt-pl-generator`, `llm-cost-llms-txt`). Korean apps carry an English
+   summary too, so an English visitor is never shown a blank card.
+4. **A submission pipeline that works at zero cost** — the form builds a pre-filled
+   GitHub issue URL *and* the exact JSON object to paste into `data/apps.json`.
+
+## Layout
+
+| Path | What it is |
+| --- | --- |
+| `data/apps.json` | Source of truth: meta, categories, 26 listings with `httpStatus` + `lastChecked` |
+| `data/apps.bundle.js` | Generated from the JSON so the page also works opened from disk (`file://`) |
+| `core.js` | Pure logic (UMD): filter, search, sort, stats, stamps, validation, issue URL |
+| `i18n.js` | EN/KO strings, identical key sets |
+| `app.js` | DOM wiring: render, language toggle, detail modal, submission modal, toasts |
+| `scripts/verify-apps.mjs` | Real HEAD/GET check of every URL, rewrites JSON + bundle |
+| `scripts/build-data.mjs` | Rebuilds the bundle from the JSON |
+| `.github/workflows/daily-verify.yml` | Runs the checker at 04:10 KST and commits the new stamps |
+
+## Data schema
+
+```json
+{
+  "id": "price-radar-kr",
+  "no": 26,
+  "slug": "price-radar-kr",
+  "url": "https://marcj81.github.io/price-radar-kr/",
+  "name": { "en": "Price Radar KR", "ko": "깜깜이 시세 레이더" },
+  "category": "utility",
+  "languages": ["ko"],
+  "noSignup": true,
+  "pricing": "free",
+  "short": { "en": "…", "ko": "…" },
+  "long": { "en": "…", "ko": "…" },
+  "features": { "en": ["…", "…", "…"], "ko": ["…", "…", "…"] },
+  "httpStatus": 200,
+  "lastChecked": "2026-11-22T02:05:41.000Z"
+}
+```
+
+- `category` is one of `ai` · `finance` · `business` · `utility`.
+- `pricing` is `free`, `free-byok` (Pro output with your own key) or `paid`
+  (a human service; add `priceNote` and the card turns amber).
+- `httpStatus` and `lastChecked` are written by the checker — do not hand-edit them.
+
+## Run it
+
+```bash
+node scripts/build-data.mjs      # refresh the bundle after editing the JSON
+node scripts/verify-apps.mjs     # real liveness check; rewrites JSON + bundle
+node scripts/verify-apps.mjs --dry               # check only
+node scripts/verify-apps.mjs --only price-radar-kr
+
+node test.js                     # unit tests
+python3 uitest.py                # real Chrome: EN/KO, filters, modals, 390px, screenshots
+```
+
+`uitest.py` serves the folder over HTTP (not `file://`) and writes
+`preview-en.png`, `preview-ko.png`, `preview-submit.png`, `preview-mobile.png`
+(plus `preview-full-en.png`, the whole desktop page).
+
+The published repository carries the site only. The test harness (`test.js`,
+`uitest.py`) and the preview PNGs stay in the local working folder and are listed in
+`.gitignore` — they are shipped to nobody and served from nowhere.
+
+Current state: **355 unit checks**, **125 browser checks**, 0 failures;
+26/26 listings answered HTTP 200 on 2026-11-22 11:16 KST.
+
+## Accepting a submission
+
+0. The repository must exist first. Until `MarCJ81/onetap-market` is created, the
+   prefilled issue URL answers 404 — the form still builds the correct URL, but GitHub
+   has nowhere to put the issue.
+1. The maker fills the form on the page → **Open prefilled GitHub issue** → the issue
+   lands in `MarCJ81/onetap-market` with the JSON already in the body.
+2. Paste that JSON object into `apps` in `data/apps.json`, then run
+   `node scripts/verify-apps.mjs --only <id>` to stamp the real status.
+3. `node scripts/build-data.mjs && node test.js`, commit, push.
+4. The daily action keeps the timestamp honest from then on.
+
+## Deploy (repository name `onetap-market`)
+
+```bash
+# new repository named onetap-market, folder published at /
+gh repo create MarCJ81/onetap-market --public --source=. --remote=origin --push
+# or: create it on GitHub, then from this folder
+git init -b main && git add -A && git commit -m "feat(onetap-market): v1.0.0 verified market" \
+  && git remote add origin https://github.com/MarCJ81/onetap-market.git && git push -u origin main
+```
+
+`.github/workflows/daily-verify.yml` travels with the commit; enable Actions so the
+04:10 KST check can commit new timestamps back to `main`.
+
+GitHub Pages: publish from `main` → `/ (root)`, then check
+`UITEST_BASE=https://marcj81.github.io/onetap-market python3 uitest.py`.
+
+## Rules this project keeps
+
+- No external request: no CDN, no analytics, no ad script, no remote font. The only
+  outbound links are the listings themselves and the GitHub issue intake.
+- No personal data in the source: no real names, phone numbers, account ids or blog
+  names. Creator attribution is `OneTap Labs` / `MarCJ81`. `test.js` enforces this by
+  string search over the shipped files.
+- Everything is static: HTML, CSS, one JSON file and plain JS. Cost to run is zero, so
+  listing stays free.

@@ -1,0 +1,1036 @@
+/* Generated from data/apps.json by scripts/build-data.mjs — do not edit by hand. */
+globalThis.__ONETAP_MARKET__ = {
+  "meta": {
+    "name": "OneTap Market",
+    "nameKo": "원탭 마켓",
+    "tagline": "Verified no-signup web apps",
+    "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
+    "version": "1.0.0",
+    "schemaVersion": 1,
+    "repo": "MarCJ81/onetap-market",
+    "creator": "OneTap Labs",
+    "handle": "MarCJ81",
+    "lastFullCheck": "2026-11-22T02:16:41.672Z",
+    "lastFullCheckOk": 26,
+    "lastFullCheckTotal": 26,
+    "verifyWindowHours": 24,
+    "lastCheckDurationMs": 1021,
+    "checkedBy": "scripts/verify-apps.mjs"
+  },
+  "categories": [
+    {
+      "id": "ai",
+      "en": "AI Creation",
+      "ko": "AI 제작"
+    },
+    {
+      "id": "finance",
+      "en": "Tax & Finance",
+      "ko": "세무·금융"
+    },
+    {
+      "id": "business",
+      "en": "Business & Docs",
+      "ko": "비즈니스·문서"
+    },
+    {
+      "id": "utility",
+      "en": "Utility & Dev",
+      "ko": "유틸·개발"
+    }
+  ],
+  "apps": [
+    {
+      "id": "shortform-radar",
+      "no": 1,
+      "slug": "shortform-radar",
+      "url": "https://marcj81.github.io/shortform-radar/",
+      "name": {
+        "en": "Shortform Radar",
+        "ko": "떡상 레이더"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Ranks the short videos blowing up right now against each channel's own average, then drafts the 30-second script.",
+        "ko": "지금 터지는 숏폼만 골라 채널 평균 대비 배수로 줄 세우고, 30초 대본까지 뽑습니다."
+      },
+      "long": {
+        "en": "A viral multiplier does the sorting for you: each clip is compared with that channel's usual view count, so a 7× hit from a small account shows up next to a big account's flat week. Pick a clip, get the hook, the beat timing and a 30-second script you can shoot today.",
+        "ko": "채널 평균 조회수로 나눈 배수를 기준으로 정렬합니다. 작은 계정의 7배 영상이 큰 계정의 평범한 영상보다 위에 옵니다. 클립을 고르면 훅·구간·30초 대본이 같이 나와 오늘 바로 찍을 수 있습니다."
+      },
+      "features": {
+        "en": [
+          "Viral multiplier per clip",
+          "Hook + 30s script",
+          "Benchmark board you keep"
+        ],
+        "ko": [
+          "바이럴 배수 자동 계산",
+          "30초 대본 + 훅",
+          "벤치마킹 보드 저장"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "ai-vector-studio",
+      "no": 2,
+      "slug": "ai-vector-studio",
+      "url": "https://marcj81.github.io/ai-vector-studio/",
+      "name": {
+        "en": "OneTap Vector Studio",
+        "ko": "원탭 벡터 스튜디오"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Turns an AI-generated logo PNG into print-ready SVG, EPS, PDF or AI inside the browser.",
+        "ko": "AI가 만든 로고·일러스트 PNG를 인쇄용 SVG·EPS·AI로 바꿉니다."
+      },
+      "long": {
+        "en": "Midjourney and ChatGPT hand you a 1024px PNG. Printers want curves. This traces the bitmap, fits Bézier curves, quantises the colour count and writes SVG, EPS, PDF or AI — with a transparent background and a file small enough to email.",
+        "ko": "미드저니·ChatGPT가 준 PNG는 인쇄소에서 쓰기 어렵습니다. 비트맵을 추적해 베지어 곡선으로 피팅하고, 색상 수를 정리해 SVG·EPS·PDF·AI로 내보냅니다. 배경 투명화와 용량 최적화까지 브라우저 안에서 끝납니다."
+      },
+      "features": {
+        "en": [
+          "Bézier curve fitting",
+          "EPS · PDF · AI export",
+          "Colour quantisation"
+        ],
+        "ko": [
+          "베지어 곡선 피팅",
+          "EPS·PDF·AI 내보내기",
+          "색상 양자화·용량 최적화"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "yearend-tax-reverse",
+      "no": 3,
+      "slug": "yearend-tax-reverse",
+      "url": "https://marcj81.github.io/yearend-tax-reverse/",
+      "name": {
+        "en": "13th Month Reverse Calculator",
+        "ko": "연말정산 13월의 월급 역산기"
+      },
+      "category": "finance",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Works backwards from 31 December: what to pay in, and how much tax that saves before the year closes.",
+        "ko": "12월 31일 전에 뭘 얼마나 해야 세금이 얼마 줄어드는지 역산합니다."
+      },
+      "long": {
+        "en": "Enter gross salary and the cards, pension and rent you already have. The page tells you how far you are from the 25% card threshold, what is left of each deduction cap, and how much a last pension or IRP payment actually returns.",
+        "ko": "총급여와 카드·연금·월세만 넣으면 카드 25% 문턱까지 얼마나 남았는지, 공제 한도가 얼마나 남았는지, 연금저축·IRP 900만 원을 채우면 세금이 얼마 줄어드는지 계산합니다. 남은 날짜 기준으로 역산합니다."
+      },
+      "features": {
+        "en": [
+          "Card 25% threshold",
+          "Pension · IRP 9M KRW cap",
+          "Remaining deduction diagnosis"
+        ],
+        "ko": [
+          "카드 25% 문턱 계산",
+          "연금저축·IRP 900만 한도",
+          "공제 잔여 자동 진단"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "shorts-video-studio",
+      "no": 4,
+      "slug": "shorts-video-studio",
+      "url": "https://marcj81.github.io/shorts-video-studio/",
+      "name": {
+        "en": "One-Tap Shorts Studio",
+        "ko": "원탭 숏폼 스튜디오"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "One line of script becomes a 5-cut 9:16 storyboard, recorded to a real .webm file in the tab.",
+        "ko": "대본 한 줄로 9:16 숏폼 5컷, 자막까지 브라우저에서 녹화합니다."
+      },
+      "long": {
+        "en": "The five-cut structure (hook, problem, proof, turn, call) is fixed, so you only fill the words. Add captions and a background bed, then record 1080×1920 straight from the browser with MediaRecorder. Cut PNGs and .srt come out alongside the video.",
+        "ko": "훅·문제·근거·반전·행동 5컷 구조가 고정되어 있어 문장만 채우면 됩니다. 자막과 배경음을 얹고 브라우저에서 1080×1920 .webm으로 바로 녹화합니다. 컷 PNG 5장과 .srt 자막도 같이 나옵니다."
+      },
+      "features": {
+        "en": [
+          "5-cut storyboard",
+          "Real .webm recording",
+          ".srt · .vtt captions"
+        ],
+        "ko": [
+          "5컷 스토리보드",
+          ".webm 실제 녹화",
+          "자막 .srt·.vtt"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "ai-image-studio",
+      "no": 5,
+      "slug": "ai-image-studio",
+      "url": "https://marcj81.github.io/ai-image-studio/",
+      "name": {
+        "en": "One-Tap Image Studio",
+        "ko": "원탭 이미지·썸네일 스튜디오"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Cuts the background from one photo and lays out five thumbnail sizes that platforms will not crop.",
+        "ko": "사진 한 장으로 배경을 지우고 규격 썸네일 5종을 만듭니다."
+      },
+      "long": {
+        "en": "Drop a photo, and the page removes the background locally, then frames it for YouTube, Instagram, Naver Smart Store and two other sizes across six themes. Save as PNG, JPG or WebP without a canvas that blocks the download.",
+        "ko": "사진을 넣으면 배경을 브라우저 안에서 지우고 유튜브·인스타·스마트스토어 등 5개 규격에 맞춰 6가지 테마로 배치합니다. PNG·JPG·WebP로 저장합니다."
+      },
+      "features": {
+        "en": [
+          "Local background removal",
+          "5 sizes · 6 themes",
+          "PNG · JPG · WebP"
+        ],
+        "ko": [
+          "배경 투명화",
+          "규격 5종·테마 6종",
+          "PNG·JPG·WebP"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "ai-writer-studio",
+      "no": 6,
+      "slug": "ai-writer-studio",
+      "url": "https://marcj81.github.io/ai-writer-studio/",
+      "name": {
+        "en": "One-Tap Draft Studio",
+        "ko": "원탭 원고 스튜디오"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Assembles a blog post, a thread or a product page from your notes, then scores every line for AI tone.",
+        "ko": "블로그·스레드·상세페이지 원고를 조립하고 AI 티를 잡습니다."
+      },
+      "long": {
+        "en": "You bring one topic line and the notes only you could write; the studio lays them out in a five-part flow, keeps the length near 2,200 characters, and flags translated-sounding sentences and ad-risk phrases line by line.",
+        "ko": "주제 한 줄과 본인만 쓸 수 있는 경험 메모를 넣으면 5단 구성으로 원고를 조립합니다. 2,200자 내외를 유지하고, 번역체처럼 보이는 문장과 광고 위험 표현을 문장마다 표시합니다."
+      },
+      "features": {
+        "en": [
+          "Blog · thread · product copy",
+          "AI-tone check per line",
+          "2,200-character target"
+        ],
+        "ko": [
+          "블로그·스레드·상세",
+          "AI 티 실시간 점검",
+          "2,200자 원고 목표"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "blog-seo-studio",
+      "no": 7,
+      "slug": "blog-seo-studio",
+      "url": "https://marcj81.github.io/blog-seo-studio/",
+      "name": {
+        "en": "Blog SEO Studio",
+        "ko": "블로그 키워드·SEO 스튜디오"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Keyword competition and a pre-publish draft check on one screen, with a five-step draft builder.",
+        "ko": "키워드 경쟁률부터 발행 전 원고 진단까지 한 화면에."
+      },
+      "long": {
+        "en": "Type a seed keyword and get competition grades, related queries and a difficulty score computed from the top results you paste in. The checker then reads your draft for twelve families of translated phrasing and copy-paste ad language before you hit publish.",
+        "ko": "씨앗 키워드를 넣으면 경쟁 등급과 연관 검색어를 뽑고, 상위 결과를 붙여 넣으면 경쟁강도를 계산합니다. 발행 전에는 번역체 12계열과 상업성 표현을 문장 단위로 짚어 줍니다."
+      },
+      "features": {
+        "en": [
+          "Keyword competition grades",
+          "12 translation-tone families",
+          "Five-part draft builder"
+        ],
+        "ko": [
+          "키워드 경쟁률·등급",
+          "번역체 12계열 탐지",
+          "5단 원고 빌더"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "commerce-seo-studio",
+      "no": 8,
+      "slug": "commerce-seo-studio",
+      "url": "https://marcj81.github.io/commerce-seo-studio/",
+      "name": {
+        "en": "Commerce SEO Studio",
+        "ko": "커머스 SEO 스튜디오"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Scores a product title, sizes up the competition and writes the seven blocks of a detail page.",
+        "ko": "상품명 점수·경쟁강도·7단 상세 카피를 스토어 규칙대로."
+      },
+      "long": {
+        "en": "Smart Store and Coupang each have their own title rules and banned words; this applies whichever you pick. You get a 0–100 title score, a competition estimate from the listing count, and a seven-block detail page you can paste into the editor.",
+        "ko": "스마트스토어와 쿠팡의 상품명 규칙과 금지어를 각각 적용합니다. 상품명은 0~100점으로 채점하고, 등록 수로 경쟁강도를 추정하며, 상세페이지는 7개 블록으로 나눠 카피를 만들어 줍니다."
+      },
+      "features": {
+        "en": [
+          "0–100 title score",
+          "Competition estimate",
+          "Seven-block detail copy"
+        ],
+        "ko": [
+          "상품명 0~100점",
+          "경쟁강도 1초 계산",
+          "7단 상세 카피"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "cardnews-script-studio",
+      "no": 9,
+      "slug": "cardnews-script-studio",
+      "url": "https://marcj81.github.io/cardnews-script-studio/",
+      "name": {
+        "en": "Card News Studio",
+        "ko": "카드뉴스·대본 스튜디오"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Splits one long post into eight cards, exports them as a ZIP, and turns the same text into a shortform script.",
+        "ko": "긴 글을 카드 8장과 숏폼 대본·자막으로 쪼갭니다."
+      },
+      "long": {
+        "en": "Paste a blog post and choose 4:5 or 9:16. The studio cuts it into eight cards, draws them from your reference layout, and gives you one ZIP of PNGs plus an .srt caption file for the shortform cut of the same story.",
+        "ko": "블로그 글을 붙여넣고 4:5 또는 9:16을 고르면 카드 8장으로 나눠 PNG·ZIP으로 내려받습니다. 같은 내용으로 숏폼 대본과 .srt 자막도 만들어 줍니다."
+      },
+      "features": {
+        "en": [
+          "PNG · ZIP export",
+          "Reference layout copy",
+          "Shortform .srt captions"
+        ],
+        "ko": [
+          "PNG·ZIP 내보내기",
+          "레퍼런스 레이아웃 복제",
+          "숏폼 .srt 자막"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "review-reply-studio",
+      "no": 10,
+      "slug": "review-reply-studio",
+      "url": "https://marcj81.github.io/review-reply-studio/",
+      "name": {
+        "en": "Owner Reply Studio",
+        "ko": "사장님 리뷰 답글 스튜디오"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Reads the star rating and the mood, then writes three owner replies in the tone you actually use.",
+        "ko": "리뷰 별점·감정을 읽고 사장님 답글 3안을 만듭니다."
+      },
+      "long": {
+        "en": "Paste one review or a whole export. It sorts by sentiment, drafts three replies per review (apologetic, factual, warm), and batches a CSV for platforms that still want you to paste each one. Fake-review rebuttals get a separate template.",
+        "ko": "리뷰 한 건 또는 목록 전체를 붙여넣으면 감정을 분류하고, 사과형·사실형·친근형 답글 3안을 만듭니다. 일괄 답글은 CSV로 뽑고, 허위 리뷰 소명서는 별도 양식으로 작성합니다."
+      },
+      "features": {
+        "en": [
+          "Three reply tones",
+          "Batch CSV replies",
+          "Fake-review rebuttal"
+        ],
+        "ko": [
+          "답글 3안·말투 3종",
+          "일괄 답글 CSV",
+          "허위 리뷰 소명서"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "ai-backoffice-offer",
+      "no": 11,
+      "slug": "ai-backoffice-offer",
+      "url": "https://marcj81.github.io/ai-backoffice-offer/",
+      "name": {
+        "en": "OneTap Backoffice",
+        "ko": "원탭 백오피스"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "paid",
+      "priceNote": {
+        "en": "from ₩290,000 / month · human service",
+        "ko": "월 29만 원부터 · 사람이 붙는 대행"
+      },
+      "short": {
+        "en": "Not a tool: reviews, blog drafts, card news and quotes handled for you, every day. The one paid listing here.",
+        "ko": "도구가 아니라 대행입니다. 리뷰·블로그·카드뉴스·견적서를 매일 대신 처리하는 유일한 유료 항목."
+      },
+      "long": {
+        "en": "The owner sends material in three minutes a day on KakaoTalk; replies, blog drafts, card news and quotes come back the same day, checked against advertising rules. This listing is a service with a monthly fee and is labelled as paid, unlike the free apps around it.",
+        "ko": "사장님은 하루 3분 카톡으로 자료만 보내고, 리뷰 답글·블로그 원고·카드뉴스·견적서를 광고 규정 검수까지 마쳐 당일 받습니다. 이 카드만 사람이 붙는 월 정액 서비스라 유료로 표시합니다."
+      },
+      "features": {
+        "en": [
+          "Three minutes a day to submit",
+          "Same-day delivery",
+          "Ad-rule checked"
+        ],
+        "ko": [
+          "하루 3분 접수",
+          "당일 납품",
+          "광고 규정 검수"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "payslip-calculator",
+      "no": 12,
+      "slug": "payslip-calculator",
+      "url": "https://marcj81.github.io/payslip-calculator/",
+      "name": {
+        "en": "Payslip Studio",
+        "ko": "급여명세서 스튜디오"
+      },
+      "category": "finance",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "2026 rates for the four insurances and weekly holiday pay, printed as an A4 payslip.",
+        "ko": "2026년 요율로 4대보험·주휴수당을 계산해 A4 명세서로."
+      },
+      "long": {
+        "en": "Built for the five-person shop, not an HR suite. Enter hours and pay, get the deductions at 2026 rates including weekly holiday pay for under-five workplaces, and print an A4 slip that carries the items Article 48 of the Labour Standards Act requires.",
+        "ko": "5인 미만 사업장 기준으로 만들었습니다. 근무시간과 급여를 넣으면 2026년 요율로 주휴수당과 4대보험을 계산하고, 근로기준법 제48조 기재사항을 갖춘 A4 명세서를 인쇄합니다."
+      },
+      "features": {
+        "en": [
+          "2026 contribution rates",
+          "Weekly holiday pay under 5 staff",
+          "One-page A4 print"
+        ],
+        "ko": [
+          "2026 요율 반영",
+          "5인 미만 주휴수당",
+          "A4 1쪽 인쇄"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "tax-margin-calculator",
+      "no": 13,
+      "slug": "tax-margin-calculator",
+      "url": "https://marcj81.github.io/tax-margin-calculator/",
+      "name": {
+        "en": "Tax & Margin Calculator",
+        "ko": "1인 사업자 세금·순수익 계산기"
+      },
+      "category": "finance",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "VAT, the 3.3% withholding and platform fees, all subtracted to show what lands in your account this month.",
+        "ko": "부가세·3.3%·수수료까지 넣고 이번 달 손에 쥘 돈을 봅니다."
+      },
+      "long": {
+        "en": "Compare simplified and standard VAT side by side, apply the 3.3% freelance withholding, take out the marketplace commission, and see the monthly net before you quote your next job.",
+        "ko": "간이과세와 일반과세를 나란히 비교하고, 3.3% 원천징수와 플랫폼 수수료를 차감해 이번 달 순수익을 보여 줍니다. 다음 견적을 내기 전에 남는 돈을 먼저 확인할 수 있습니다."
+      },
+      "features": {
+        "en": [
+          "Simplified vs standard VAT",
+          "3.3% withholding",
+          "Monthly net simulation"
+        ],
+        "ko": [
+          "간이 vs 일반 비교",
+          "3.3% 종소세 계산",
+          "월 순수익 시뮬"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "severance-leave-calculator",
+      "no": 14,
+      "slug": "severance-leave-calculator",
+      "url": "https://marcj81.github.io/severance-leave-calculator/",
+      "name": {
+        "en": "Severance & Leave Calculator",
+        "ko": "퇴직금·연차 계산기"
+      },
+      "category": "finance",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Severance and unused leave in one pass, using both leave-counting rules so you can see the difference.",
+        "ko": "퇴직금과 연차를 두 기준으로 동시에 계산합니다."
+      },
+      "long": {
+        "en": "Severance comes out of the days worked and the average wage, with the larger of average and ordinary wage applied. Leave is counted twice — hire-date basis and fiscal-year basis — so the settlement you hand an employee matches what they will calculate themselves.",
+        "ko": "재직일수와 평균임금으로 퇴직금을 계산하고 평균임금·통상임금 중 큰 값을 적용합니다. 연차는 입사일 기준과 회계연도 기준으로 각각 계산해, 정산 금액이 근로자 계산과 어긋나지 않게 합니다."
+      },
+      "features": {
+        "en": [
+          "Severance and leave together",
+          "Higher of average or ordinary wage",
+          "Fiscal-year comparison"
+        ],
+        "ko": [
+          "퇴직금·연차 동시 계산",
+          "평균·통상임금 큰 값 적용",
+          "회계연도 정산 비교"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "pdf-sign-stamp",
+      "no": 15,
+      "slug": "pdf-sign-stamp",
+      "url": "https://marcj81.github.io/pdf-sign-stamp/",
+      "name": {
+        "en": "PDF Sign & Stamp",
+        "ko": "PDF 서명·직인 스튜디오"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Sign and stamp a contract without the PDF ever leaving the tab.",
+        "ko": "계약서 PDF는 브라우저 밖으로 나가지 않고 서명·도장."
+      },
+      "long": {
+        "en": "Draw a signature, make a transparent seal from a name or a business number, drop both on the right page and save. No upload endpoint exists, which is the point: employment and lease contracts stay on your machine.",
+        "ko": "서명을 직접 그리고, 이름이나 사업자번호로 투명 도장을 만들어 원하는 페이지에 얹고 저장합니다. 업로드 서버가 아예 없어 근로·임대차 계약서가 외부로 나가지 않습니다."
+      },
+      "features": {
+        "en": [
+          "Zero uploads",
+          "Transparent seal maker",
+          "Five contract templates"
+        ],
+        "ko": [
+          "서버 전송 0건",
+          "투명 도장 제작",
+          "계약서 5종 양식"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "agency-proposal-maker",
+      "no": 16,
+      "slug": "agency-proposal-maker",
+      "url": "https://marcj81.github.io/agency-proposal-maker/",
+      "name": {
+        "en": "Proposal Studio",
+        "ko": "대행사 견적서·제안서 생성기"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Five real price presets, change the quantities, print a two-page A4 quote.",
+        "ko": "단가 프리셋 5종으로 A4 2쪽 견적서를 바로 만듭니다."
+      },
+      "long": {
+        "en": "The presets are rates that Korean agencies actually charge, so you start from a number instead of a blank cell. Eight themes, print-to-PDF, and a line-editing pass that flags vague wording before the client reads it.",
+        "ko": "국내 대행사가 실제로 쓰는 단가를 프리셋으로 넣어 두어 빈칸에서 시작하지 않습니다. 테마 8종, PDF 인쇄, 고객이 읽기 전에 모호한 문구를 잡아 주는 문구 진단까지 포함합니다."
+      },
+      "features": {
+        "en": [
+          "Five price presets",
+          "Two-page A4 PDF",
+          "Wording check"
+        ],
+        "ko": [
+          "단가 프리셋 5종",
+          "A4 2쪽 PDF",
+          "문구 진단·교정"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "influencer-campaign-board",
+      "no": 17,
+      "slug": "influencer-campaign-board",
+      "url": "https://marcj81.github.io/influencer-campaign-board/",
+      "name": {
+        "en": "Creator Matching Board",
+        "ko": "체험단 매칭 보드"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Recruiting, selection, shipping and review deadlines on one board, with the sponsor report attached.",
+        "ko": "모집·선정·발송·리뷰 마감을 한 보드에서, 성과 리포트까지."
+      },
+      "long": {
+        "en": "Open a campaign, move applicants through the stages, and the board keeps the shipping list and review deadlines in view. When it closes, a one-page report with CPV and ROI is generated for the advertiser.",
+        "ko": "공고를 열고 지원자를 단계별로 옮기면 발송 목록과 리뷰 마감이 한눈에 남습니다. 마감 후에는 CPV·ROI가 들어간 1장 성과 리포트를 광고주에게 보낼 수 있게 만듭니다."
+      },
+      "features": {
+        "en": [
+          "Applicant pipeline",
+          "Brief psychology check",
+          "CPV · ROI report"
+        ],
+        "ko": [
+          "지원자 파이프라인",
+          "공고문 심리 진단",
+          "CPV·ROI 리포트"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "linkhub-studio",
+      "no": 18,
+      "slug": "onetaplink-studio",
+      "url": "https://marcj81.github.io/onetaplink-studio/",
+      "name": {
+        "en": "Link & Inquiry Builder",
+        "ko": "원탭링크 (OneTapLink)"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "A profile link page and a one-minute inquiry form, exported as a single HTML file you own.",
+        "ko": "프로필 링크와 1분 문의폼을 HTML 한 장으로 내보냅니다."
+      },
+      "long": {
+        "en": "Most link tools put their own logo, ads and monthly fee on your page. This one exports one HTML file with no external requests, so you can host it anywhere — or open it from a USB stick — and the inquiry form still works.",
+        "ko": "링크 서비스는 대개 자기 로고와 광고를 얹고 월 요금을 받습니다. 여기서는 외부 요청이 없는 HTML 한 장으로 내보내 어디서든 열 수 있게 합니다. 문의폼도 파일 안에서 그대로 동작합니다."
+      },
+      "features": {
+        "en": [
+          "Zero-request HTML",
+          "One-minute inquiry form",
+          "Your logo, your theme"
+        ],
+        "ko": [
+          "외부 요청 0건 HTML",
+          "1분 문의폼",
+          "로고·테마 자유"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "youtube-comment-analyzer",
+      "no": 19,
+      "slug": "youtube-comment-analyzer",
+      "url": "https://marcj81.github.io/youtube-comment-analyzer/",
+      "name": {
+        "en": "Comment Radar",
+        "ko": "유튜브 댓글·고객반응 분석기"
+      },
+      "category": "ai",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "short": {
+        "en": "Sorts comments into buying intent, questions, praise and complaints, then writes the FAQ.",
+        "ko": "댓글을 구매의향·질문·긍정·불만으로 나눠 FAQ를 뽑습니다."
+      },
+      "long": {
+        "en": "Paste comments from YouTube or a product page. The radar tags four intents, counts them, and builds an FAQ and a pinned comment from what people keep asking — usually the fastest way to find the next topic.",
+        "ko": "유튜브나 상품 페이지 댓글을 붙여넣으면 구매의향·질문·긍정·불만 네 갈래로 나눠 세고, 반복되는 질문으로 FAQ와 고정댓글을 만듭니다. 다음 소재를 가장 빨리 찾는 방법입니다."
+      },
+      "features": {
+        "en": [
+          "Four-intent tagging",
+          "FAQ from repeated questions",
+          "Pinned comment copy"
+        ],
+        "ko": [
+          "4분류 자동 태깅",
+          "FAQ·고정댓글 추출",
+          "카피 제안"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "ad-law-checker",
+      "no": 20,
+      "slug": "ad-law-checker",
+      "url": "https://marcj81.github.io/ad-law-checker/",
+      "name": {
+        "en": "Ad Law Checker",
+        "ko": "광고 문구 법률 검수기"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Fifty rules from supplements, beauty, medical and commerce regulations, with replacement wording.",
+        "ko": "건기식·뷰티·의료·커머스 50개 규칙으로 위험 표현 검수."
+      },
+      "long": {
+        "en": "Flags the phrases that get ads pulled — disease claims, superlatives, before-and-after promises, undisclosed sponsorship — and suggests wording that keeps the meaning and passes review. It is a reference check, not legal advice.",
+        "ko": "질병 예방·치료 표현, 최상급, 전후 비교, 대가성 미고지처럼 광고가 내려가는 표현을 잡고 뜻은 살리면서 통과하는 대체 문구를 함께 줍니다. 법률 자문이 아닌 참고 검수입니다."
+      },
+      "features": {
+        "en": [
+          "50 rules in one pass",
+          "Sponsorship disclosure check",
+          "Alternative wording"
+        ],
+        "ko": [
+          "50개 규칙 1초 검수",
+          "대가성·고지 점검",
+          "대체 문구 제안"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "privacy-security-guard",
+      "no": 21,
+      "slug": "privacy-security-guard",
+      "url": "https://marcj81.github.io/privacy-security-guard/",
+      "name": {
+        "en": "Privacy & Link Guard",
+        "ko": "개인정보·피싱링크 보안 점검기"
+      },
+      "category": "utility",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Masks ID and card numbers, scores a suspicious link before you tap it, and strips photo GPS.",
+        "ko": "주민번호·카드·계좌를 가리고 피싱 링크를 걸러냅니다."
+      },
+      "long": {
+        "en": "Three small jobs in one page: hide resident, card and account numbers in text you are about to send, score a URL against phishing patterns before you open it, and remove GPS and camera metadata from a photo before uploading.",
+        "ko": "보내기 전에 할 세 가지 일을 한 페이지에 담았습니다. 주민번호·카드·계좌번호를 가리고, 누르기 전에 링크의 피싱 위험을 점수로 보여 주고, 사진에서 GPS와 촬영 정보를 지웁니다."
+      },
+      "features": {
+        "en": [
+          "Automatic masking",
+          "Phishing risk score",
+          "Photo GPS removal"
+        ],
+        "ko": [
+          "개인정보 자동 마스킹",
+          "피싱 링크 위험 점수",
+          "사진 GPS·메타 삭제"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "ics-viewer-online",
+      "no": 22,
+      "slug": "ics-viewer-online",
+      "url": "https://marcj81.github.io/ics-viewer-online/",
+      "name": {
+        "en": "ICS Calendar Viewer & CSV Converter",
+        "ko": "ICS 캘린더 뷰어·CSV 변환기"
+      },
+      "category": "utility",
+      "languages": [
+        "en"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Open an .ics file, check it against RFC 5545, and export CSV, TSV or JSON.",
+        "ko": "캘린더 .ics 파일을 열어 RFC 5545 규격을 검사하고 CSV·TSV·JSON으로 내보냅니다."
+      },
+      "long": {
+        "en": "Outlook, Google and Apple each hand you a calendar file that the others struggle to read. Drop the file here to see every event in a table, find the line that breaks the spec, and export the whole thing as CSV, TSV or JSON. A sample calendar loads first so you can try it without a file.",
+        "ko": "아웃룩·구글·애플이 주는 캘린더 파일은 서로 열리지 않을 때가 많습니다. 파일을 넣으면 일정을 표로 보여 주고, 규격을 어긴 줄을 찾아 주며, 전체를 CSV·TSV·JSON으로 내보냅니다. 파일 없이도 샘플 일정으로 바로 써 볼 수 있습니다."
+      },
+      "features": {
+        "en": [
+          "RFC 5545 validation",
+          "CSV · TSV · JSON export",
+          "Sample calendar included"
+        ],
+        "ko": [
+          "RFC 5545 검증",
+          "CSV·TSV·JSON 내보내기",
+          "샘플 캘린더 내장"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "invoice-receipt-pl-generator",
+      "no": 23,
+      "slug": "invoice-receipt-pl-generator",
+      "url": "https://marcj81.github.io/invoice-receipt-pl-generator/",
+      "name": {
+        "en": "Invoice, Receipt & P&L Generator",
+        "ko": "인보이스·영수증·손익 생성기"
+      },
+      "category": "finance",
+      "languages": [
+        "en"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Invoice, quote, receipt and profit-and-loss, with every amount computed in integer cents.",
+        "ko": "인보이스·견적·영수증·손익계산서를 센트 단위 정수 계산으로 만듭니다."
+      },
+      "long": {
+        "en": "Freelancers outside Korea usually need a PDF invoice before a client will pay. Build line items, let BigInt handle the cent maths so totals never drift, and print the invoice, quote, receipt or monthly P&L straight to PDF.",
+        "ko": "해외 클라이언트는 PDF 인보이스가 있어야 입금합니다. 항목을 넣으면 센트 단위 정수 계산으로 합계가 어긋나지 않고, 인보이스·견적·영수증·월 손익을 PDF로 인쇄할 수 있습니다."
+      },
+      "features": {
+        "en": [
+          "Invoice · quote · receipt · P&L",
+          "BigInt cent arithmetic",
+          "Print or save as PDF"
+        ],
+        "ko": [
+          "인보이스·견적·영수증·손익",
+          "BigInt 센트 계산",
+          "PDF 인쇄·저장"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "llm-cost-llms-txt",
+      "no": 24,
+      "slug": "llm-cost-llms-txt",
+      "url": "https://marcj81.github.io/llm-cost-llms-txt/",
+      "name": {
+        "en": "LLM Cost Calculator & llms.txt Generator",
+        "ko": "LLM 비용 계산기·llms.txt 생성기"
+      },
+      "category": "utility",
+      "languages": [
+        "en"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Price one request across four model families, then write the llms.txt your site is missing.",
+        "ko": "한 요청을 네 모델군 가격으로 비교하고, 사이트에 빠진 llms.txt를 만듭니다."
+      },
+      "long": {
+        "en": "Enter a prompt size and a monthly call count; the table prices it across OpenAI, Anthropic, Google and DeepSeek models and reverses a budget back into tokens. The same page writes a spec-shaped llms.txt so an AI crawler can read your site.",
+        "ko": "프롬프트 크기와 월 호출 수를 넣으면 OpenAI·Anthropic·Google·DeepSeek 모델별 비용을 표로 보여 주고, 예산에서 토큰 수를 역산합니다. 같은 화면에서 AI 크롤러용 llms.txt도 규격에 맞춰 만들어 줍니다."
+      },
+      "features": {
+        "en": [
+          "Per-request to yearly cost",
+          "Budget reverse calculation",
+          "llms.txt generator"
+        ],
+        "ko": [
+          "요청당~연간 비용",
+          "예산 역산",
+          "llms.txt 생성"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "proof-of-work-report",
+      "no": 25,
+      "slug": "proof-of-work-report",
+      "url": "https://marcj81.github.io/proof-of-work-report/",
+      "name": {
+        "en": "Proof of Work Report",
+        "ko": "작업 증빙 리포트"
+      },
+      "category": "business",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "What you did this month, with links that prove it, as one A4 page and a share link.",
+        "ko": "이번 달 뭘 했는지, 증빙 링크와 PDF 한 장으로 보냅니다."
+      },
+      "long": {
+        "en": "Clients stop asking 'what are we paying for' when the month ends with a page of finished items, hours, source links and next week's plan. Export a PDF or a one-line share link that opens the same page.",
+        "ko": "완료 항목·소요시간·근거 링크·다음 주 계획을 한 장으로 정리하면 '이번 달 뭘 했냐'는 질문이 줄어듭니다. A4 1쪽 PDF나 같은 내용을 여는 공유 링크로 보냅니다."
+      },
+      "features": {
+        "en": [
+          "Finished items with evidence links",
+          "One-line share link",
+          "A4 one-page PDF"
+        ],
+        "ko": [
+          "완료·근거 링크 증빙",
+          "공유 링크 한 줄",
+          "A4 1쪽 PDF"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    },
+    {
+      "id": "price-radar-kr",
+      "no": 26,
+      "slug": "price-radar-kr",
+      "url": "https://marcj81.github.io/price-radar-kr/",
+      "name": {
+        "en": "Price Radar KR",
+        "ko": "깜깜이 시세 레이더"
+      },
+      "category": "utility",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "short": {
+        "en": "Low, average and high prices for 54 repair, cleaning, dental and moving jobs — and a verdict on the quote you got.",
+        "ko": "수리·청소·치과·이사 시세를 최저·평균·최고가로 비교합니다."
+      },
+      "long": {
+        "en": "Six trades, 54 line items, prices collected from public quotes. Enter the quote you were given and the radar says whether it sits low, fair or high, so you can answer before saying yes. Export to JSON or CSV.",
+        "ko": "6업종 54개 품목의 공개 견적을 모아 최저·평균·최고가를 보여 줍니다. 받은 견적을 넣으면 낮음·적정·높음으로 판정해, 오케이 하기 전에 답을 알 수 있습니다. JSON·CSV로 내보냅니다."
+      },
+      "features": {
+        "en": [
+          "6 trades · 54 line items",
+          "Verdict on your quote",
+          "JSON · CSV export"
+        ],
+        "ko": [
+          "6업종 54품목 시세",
+          "받은 견적 판정",
+          "JSON·CSV 내보내기"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-22T02:16:41.672Z"
+    }
+  ]
+};
