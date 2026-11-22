@@ -10,11 +10,11 @@ globalThis.__ONETAP_MARKET__ = {
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
-    "lastFullCheck": "2026-11-22T02:16:41.672Z",
+    "lastFullCheck": "2026-11-22T07:11:49.509Z",
     "lastFullCheckOk": 26,
     "lastFullCheckTotal": 26,
     "verifyWindowHours": 24,
-    "lastCheckDurationMs": 1021,
+    "lastCheckDurationMs": 1008,
     "checkedBy": "scripts/verify-apps.mjs"
   },
   "categories": [
@@ -86,7 +86,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -135,9 +135,17 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
-      "version": "v1.0.0",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "version": "v1.0.1",
       "changelog": [
+        {
+          "version": "v1.0.1",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "The convert tab starts with a visible h1 that stays on top on a phone, and the overlay copy of the SVG now gets prefixed ids so gradients and masks no longer collide with the live document.",
+            "ko": "변환 탭에 h1을 넣어 휴대폰에서도 스테이지 위에 고정되게 했습니다. 같은 SVG를 겹쳐 그릴 때 id가 겹쳐 그라디언트·마스크가 깨지던 문제를 접두사로 고쳤습니다."
+          }
+        },
         {
           "version": "v1.0.0",
           "date": "2026-11-22",
@@ -184,7 +192,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -233,7 +241,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -290,9 +298,17 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
-      "version": "v2.0.0",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "version": "v2.0.1",
       "changelog": [
+        {
+          "version": "v2.0.1",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "The thumbnail tab now opens with a visible h1 and one-line intro that stay above the stage on a phone, and the two hidden file pickers got proper labels.",
+            "ko": "썸네일 제작 탭에 h1과 한 줄 설명을 넣고, 휴대폰에서도 스테이지 위에 고정되게 했습니다. 숨은 사진 선택 입력 두 곳에 접근성 이름도 붙였습니다."
+          }
+        },
         {
           "version": "v2.0.0",
           "date": "2026-11-22",
@@ -347,7 +363,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -404,7 +420,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -461,7 +477,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -518,7 +534,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -575,7 +591,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -636,7 +652,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -685,7 +701,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -734,7 +750,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -783,7 +799,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -832,9 +848,17 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
-      "version": "v1.0.0",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "version": "v1.0.1",
       "changelog": [
+        {
+          "version": "v1.0.1",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "A file that is not a PDF now gets a visible warning — \"PDF files only (.pdf)\" — from either drop zone or the picker, the document already open stays as it was, and the hero hint says PDF only. Dropping outside a zone no longer opens the file in the browser.",
+            "ko": "PDF가 아닌 파일(.txt·이미지)을 끌어다 놓거나 골라도 조용히 무시하지 않고 'PDF 파일(.pdf)만 업로드할 수 있습니다.' 경고를 띄웁니다. 열려 있던 문서는 그대로 두고, 첫 화면 안내도 PDF 전용으로 고쳤습니다. 드롭존 밖에 떨어뜨려도 브라우저가 파일을 열어 버리지 않습니다."
+          }
+        },
         {
           "version": "v1.0.0",
           "date": "2026-11-22",
@@ -881,7 +905,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -930,7 +954,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -979,9 +1003,17 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
-      "version": "v1.0.0",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "version": "v1.0.1",
       "changelog": [
+        {
+          "version": "v1.0.1",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Changing the profile name now follows through to the page title and to <title>/og:title in the exported HTML (a title you wrote yourself stays), the studio header carries a real h1, and small buttons are at least 26px tall for thumbs.",
+            "ko": "프로필 이름을 바꾸면 페이지 제목과 내보낸 HTML의 <title>·og:title이 따라 바뀝니다. 직접 쓴 제목은 그대로 둡니다. 스튜디오 머리글에 h1을 넣고, 모바일 작은 버튼의 터치 영역을 26px 이상으로 키웠습니다."
+          }
+        },
         {
           "version": "v1.0.0",
           "date": "2026-11-22",
@@ -1028,7 +1060,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1077,7 +1109,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1126,7 +1158,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1175,7 +1207,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1224,9 +1256,17 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
-      "version": "v1.0.0",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "version": "v1.0.1",
       "changelog": [
+        {
+          "version": "v1.0.1",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "A negative quantity or unit price is flagged under its own row and the items hint says it counts as 0, the line and the printed paper show 0 instead of a minus, and the paper's notes block no longer breaks the heading order.",
+            "ko": "수량·단가에 음수를 넣으면 그 줄 바로 아래에 '0 이상' 안내가 뜨고, 합계 안내도 0으로 계산된다는 걸 알려 줍니다. 계산서 용지에는 음수 대신 0이 찍힙니다. 용지의 메모 제목이 제목 단계를 건너뛰던 것도 정리했습니다."
+          }
+        },
         {
           "version": "v1.0.0",
           "date": "2026-11-22",
@@ -1273,7 +1313,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1322,7 +1362,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1371,7 +1411,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "lastChecked": "2026-11-22T07:11:49.509Z",
       "version": "v1.0.0",
       "changelog": [
         {

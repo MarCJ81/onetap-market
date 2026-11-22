@@ -75,8 +75,9 @@ surface that outside makers can submit to.
 ```
 
 - `version` is `vX.Y.Z` and always equals `changelog[0].version`; the changelog is
-  newest-first, one to four releases, each with an EN and a KO note. Seven apps that
-  received the Pro dual engine ship as `v2.0.0`, the other nineteen as `v1.0.0`.
+  newest-first, one to four releases, each with an EN and a KO note. Seven apps carry
+  the Pro dual engine as `v2.0.0` and the rest started on the shelf at `v1.0.0`; a fix
+  ships as a patch on top of that release (2026-11-22: one at `v2.0.1`, four at `v1.0.1`).
 
 - `category` is one of six fields: `ai-content` · `marketing-sns` · `tax-finance` ·
   `business-docs` · `dev-security` · `life-utility` (0 listings, open for outside
