@@ -191,9 +191,17 @@
   <section class="wrap" id="grid">
     <div class="grid" id="cardGrid" aria-label="App listings" data-i18n-aria="app.ariaGrid"></div>
     <div class="empty" id="emptyState" hidden>
-      <strong data-i18n="empty.title">Nothing matches that filter</strong>
-      <p data-i18n="empty.body">Try another category, or clear the search and the badge toggles.</p>
-      <button type="button" class="btn btn--ghost" id="emptyReset" data-i18n="empty.reset">Clear filters</button>
+      <div class="empty__block" id="emptyFilter">
+        <strong data-i18n="empty.title">Nothing matches that filter</strong>
+        <p data-i18n="empty.body">Try another category, or clear the search and the badge toggles.</p>
+        <button type="button" class="btn btn--ghost" id="emptyReset" data-i18n="empty.reset">Clear filters</button>
+      </div>
+      <div class="empty__block" id="emptyCategory" hidden>
+        <span class="empty__mark" aria-hidden="true">＋</span>
+        <strong data-i18n="empty.catTitle">No apps in this section yet.</strong>
+        <p data-i18n="empty.catBody">Be the first one on this shelf — submit your app and it goes live here once the checker sees it open. No listing fee.</p>
+        <button type="button" class="btn btn--primary" id="emptyCatCta" data-i18n="empty.catCta">Submit the first app</button>
+      </div>
     </div>
   </section>
 

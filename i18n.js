@@ -86,6 +86,9 @@
     'empty.title': 'Nothing matches that filter',
     'empty.body': 'Try another category, or clear the search and the badge toggles.',
     'empty.reset': 'Clear filters',
+    'empty.catTitle': 'No apps in this section yet.',
+    'empty.catBody': 'Be the first one on this shelf — submit your app and it goes live here once the checker sees it open. No listing fee.',
+    'empty.catCta': 'Submit the first app',
 
     'modal.close': 'Close',
     'modal.about': 'What it does',
@@ -270,6 +273,9 @@
     'empty.title': '조건에 맞는 앱이 없습니다',
     'empty.body': '다른 카테고리를 골라 보거나 검색어와 배지 조건을 지워 보세요.',
     'empty.reset': '조건 지우기',
+    'empty.catTitle': '아직 등록된 앱이 없어요.',
+    'empty.catBody': '첫 번째 앱을 신청해 보세요! 검증만 통과하면 이 자리에 바로 올라갑니다. 등록비는 없습니다.',
+    'empty.catCta': '첫 앱 신청하기',
 
     'modal.close': '닫기',
     'modal.about': '무엇을 하는 앱인가',

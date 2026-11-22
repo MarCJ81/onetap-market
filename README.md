@@ -48,7 +48,7 @@ surface that outside makers can submit to.
   "slug": "price-radar-kr",
   "url": "https://marcj81.github.io/price-radar-kr/",
   "name": { "en": "Price Radar KR", "ko": "깜깜이 시세 레이더" },
-  "category": "utility",
+  "category": "business-docs",
   "languages": ["ko"],
   "noSignup": true,
   "pricing": "free",
@@ -60,7 +60,9 @@ surface that outside makers can submit to.
 }
 ```
 
-- `category` is one of `ai` · `finance` · `business` · `utility`.
+- `category` is one of six fields: `ai-content` · `marketing-sns` · `tax-finance` ·
+  `business-docs` · `dev-security` · `life-utility` (0 listings, open for outside
+  developers — the empty shelf shows a submission CTA instead of a dead end).
 - `pricing` is `free`, `free-byok` (Pro output with your own key) or `paid`
   (a human service; add `priceNote` and the card turns amber).
 - `httpStatus` and `lastChecked` are written by the checker — do not hand-edit them.

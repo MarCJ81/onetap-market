@@ -217,16 +217,18 @@ select {
 }
 select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 
-.chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   border: 1px solid var(--line); background: #fff; color: var(--muted);
-  border-radius: 999px; padding: 7px 14px; font-size: 13px; font-weight: 600; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 7px;
+  border-radius: 999px; padding: 6px 11px; font-size: 12px; font-weight: 600; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 6px; letter-spacing: -0.005em;
 }
 .chip b { font-weight: 700; color: var(--muted-2); font-size: 11.5px; }
 .chip.is-on { background: var(--ink); border-color: var(--ink); color: #fff; }
 .chip.is-on b { color: #cbd5e1; }
 .chip:hover:not(.is-on) { border-color: var(--line-2); color: var(--ink); }
+.chip--zero { border-style: dashed; }
+.chip--zero b { color: var(--muted-2); }
 
 .toggles { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .toggle {
@@ -305,6 +307,12 @@ select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 }
 .empty strong { font-size: 17px; font-weight: 800; }
 .empty p { color: var(--muted); font-size: 14px; }
+.empty__block { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.empty__block[hidden] { display: none; }
+.empty__mark {
+  display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent-ink); font-size: 22px; font-weight: 700;
+}
 
 /* ── verification section ────────────────────────────────────────────── */
 .verify { margin-top: 72px; }
@@ -480,6 +488,13 @@ select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
   .result { width: 100%; }
   .promises { gap: 8px 18px; }
   .promises li { font-size: 12.5px; }
+  /* Six category chips + counts wrap cleanly at 390px: all sections stay visible, page never scrolls sideways. */
+  .filters__row--chips { display: block; }
+  .filters__row--chips .field { min-width: 0; }
+  .chips { gap: 6px; max-width: 100%; }
+  .chip { padding: 6px 11px; font-size: 12.5px; gap: 6px; max-width: 100%; }
+  .chip b { font-size: 11px; }
+  .empty { padding: 34px 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

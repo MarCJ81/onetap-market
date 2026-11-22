@@ -18,24 +18,34 @@
   },
   "categories": [
     {
-      "id": "ai",
-      "en": "AI Creation",
-      "ko": "AI 제작"
+      "id": "ai-content",
+      "en": "AI Content & Design",
+      "ko": "AI 콘텐츠·디자인"
     },
     {
-      "id": "finance",
-      "en": "Tax & Finance",
-      "ko": "세무·금융"
+      "id": "marketing-sns",
+      "en": "Marketing · SNS · SEO",
+      "ko": "마케팅·SNS·SEO"
     },
     {
-      "id": "business",
+      "id": "tax-finance",
+      "en": "Tax · Finance · Payroll",
+      "ko": "세무·금융·급여"
+    },
+    {
+      "id": "business-docs",
       "en": "Business & Docs",
       "ko": "비즈니스·문서"
     },
     {
-      "id": "utility",
-      "en": "Utility & Dev",
-      "ko": "유틸·개발"
+      "id": "dev-security",
+      "en": "Dev · Productivity · Security",
+      "ko": "개발·생산성·보안"
+    },
+    {
+      "id": "life-utility",
+      "en": "Life & Everyday",
+      "ko": "라이프·일상·기타"
     }
   ],
   "apps": [
@@ -48,7 +58,7 @@
         "en": "Shortform Radar",
         "ko": "떡상 레이더"
       },
-      "category": "ai",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -86,7 +96,7 @@
         "en": "OneTap Vector Studio",
         "ko": "원탭 벡터 스튜디오"
       },
-      "category": "ai",
+      "category": "ai-content",
       "languages": [
         "ko"
       ],
@@ -124,7 +134,7 @@
         "en": "13th Month Reverse Calculator",
         "ko": "연말정산 13월의 월급 역산기"
       },
-      "category": "finance",
+      "category": "tax-finance",
       "languages": [
         "ko"
       ],
@@ -162,7 +172,7 @@
         "en": "One-Tap Shorts Studio",
         "ko": "원탭 숏폼 스튜디오"
       },
-      "category": "ai",
+      "category": "ai-content",
       "languages": [
         "ko"
       ],
@@ -200,7 +210,7 @@
         "en": "One-Tap Image Studio",
         "ko": "원탭 이미지·썸네일 스튜디오"
       },
-      "category": "ai",
+      "category": "ai-content",
       "languages": [
         "ko"
       ],
@@ -238,7 +248,7 @@
         "en": "One-Tap Draft Studio",
         "ko": "원탭 원고 스튜디오"
       },
-      "category": "ai",
+      "category": "ai-content",
       "languages": [
         "ko"
       ],
@@ -276,7 +286,7 @@
         "en": "Blog SEO Studio",
         "ko": "블로그 키워드·SEO 스튜디오"
       },
-      "category": "ai",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -314,7 +324,7 @@
         "en": "Commerce SEO Studio",
         "ko": "커머스 SEO 스튜디오"
       },
-      "category": "business",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -352,7 +362,7 @@
         "en": "Card News Studio",
         "ko": "카드뉴스·대본 스튜디오"
       },
-      "category": "ai",
+      "category": "ai-content",
       "languages": [
         "ko"
       ],
@@ -390,7 +400,7 @@
         "en": "Owner Reply Studio",
         "ko": "사장님 리뷰 답글 스튜디오"
       },
-      "category": "business",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -428,7 +438,7 @@
         "en": "OneTap Backoffice",
         "ko": "원탭 백오피스"
       },
-      "category": "business",
+      "category": "business-docs",
       "languages": [
         "ko"
       ],
@@ -470,7 +480,7 @@
         "en": "Payslip Studio",
         "ko": "급여명세서 스튜디오"
       },
-      "category": "finance",
+      "category": "tax-finance",
       "languages": [
         "ko"
       ],
@@ -508,7 +518,7 @@
         "en": "Tax & Margin Calculator",
         "ko": "1인 사업자 세금·순수익 계산기"
       },
-      "category": "finance",
+      "category": "tax-finance",
       "languages": [
         "ko"
       ],
@@ -546,7 +556,7 @@
         "en": "Severance & Leave Calculator",
         "ko": "퇴직금·연차 계산기"
       },
-      "category": "finance",
+      "category": "tax-finance",
       "languages": [
         "ko"
       ],
@@ -584,7 +594,7 @@
         "en": "PDF Sign & Stamp",
         "ko": "PDF 서명·직인 스튜디오"
       },
-      "category": "business",
+      "category": "business-docs",
       "languages": [
         "ko"
       ],
@@ -622,7 +632,7 @@
         "en": "Proposal Studio",
         "ko": "대행사 견적서·제안서 생성기"
       },
-      "category": "business",
+      "category": "business-docs",
       "languages": [
         "ko"
       ],
@@ -660,7 +670,7 @@
         "en": "Creator Matching Board",
         "ko": "체험단 매칭 보드"
       },
-      "category": "business",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -698,7 +708,7 @@
         "en": "Link & Inquiry Builder",
         "ko": "원탭링크 (OneTapLink)"
       },
-      "category": "business",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -736,7 +746,7 @@
         "en": "Comment Radar",
         "ko": "유튜브 댓글·고객반응 분석기"
       },
-      "category": "ai",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -774,7 +784,7 @@
         "en": "Ad Law Checker",
         "ko": "광고 문구 법률 검수기"
       },
-      "category": "business",
+      "category": "marketing-sns",
       "languages": [
         "ko"
       ],
@@ -812,7 +822,7 @@
         "en": "Privacy & Link Guard",
         "ko": "개인정보·피싱링크 보안 점검기"
       },
-      "category": "utility",
+      "category": "dev-security",
       "languages": [
         "ko"
       ],
@@ -850,7 +860,7 @@
         "en": "ICS Calendar Viewer & CSV Converter",
         "ko": "ICS 캘린더 뷰어·CSV 변환기"
       },
-      "category": "utility",
+      "category": "dev-security",
       "languages": [
         "en"
       ],
@@ -888,7 +898,7 @@
         "en": "Invoice, Receipt & P&L Generator",
         "ko": "인보이스·영수증·손익 생성기"
       },
-      "category": "finance",
+      "category": "tax-finance",
       "languages": [
         "en"
       ],
@@ -926,7 +936,7 @@
         "en": "LLM Cost Calculator & llms.txt Generator",
         "ko": "LLM 비용 계산기·llms.txt 생성기"
       },
-      "category": "utility",
+      "category": "dev-security",
       "languages": [
         "en"
       ],
@@ -964,7 +974,7 @@
         "en": "Proof of Work Report",
         "ko": "작업 증빙 리포트"
       },
-      "category": "business",
+      "category": "business-docs",
       "languages": [
         "ko"
       ],
@@ -1002,7 +1012,7 @@
         "en": "Price Radar KR",
         "ko": "깜깜이 시세 레이더"
       },
-      "category": "utility",
+      "category": "business-docs",
       "languages": [
         "ko"
       ],

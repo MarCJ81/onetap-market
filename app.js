@@ -131,10 +131,12 @@
     ];
     categories().forEach(function (c) {
       var on = state.category === c.id;
+      var n = counts[c.id] || 0;
       html.push(
-        '<button type="button" class="chip' + (on ? ' is-on' : '') + '" data-cat="' + esc(c.id) +
+        '<button type="button" class="chip' + (on ? ' is-on' : '') + (n === 0 ? ' chip--zero' : '') +
+        '" data-cat="' + esc(c.id) +
         '" aria-pressed="' + on + '">' + esc(state.lang === 'en' ? c.en : c.ko) +
-        ' <b>' + (counts[c.id] || 0) + '</b></button>'
+        ' <b>' + n + '</b></button>'
       );
     });
     $('#catChips').innerHTML = html.join('');
@@ -201,6 +203,12 @@
     $('#cardGrid').innerHTML = list.map(cardHtml).join('');
     $('#resultCount').textContent = list.length;
     $('#emptyState').hidden = list.length > 0;
+    /* A category nobody has listed in yet is not a failed filter — it is the
+       shelf waiting for its first app, so it gets a submission CTA instead. */
+    var counts = Core.appCounts(apps(), categories());
+    var emptyCategory = state.category !== 'all' && (counts[state.category] || 0) === 0;
+    $('#emptyFilter').hidden = emptyCategory;
+    $('#emptyCategory').hidden = !emptyCategory;
     $$('[data-langfilter]').forEach(function (b) {
       var on = b.getAttribute('data-langfilter') === state.langFilter;
       b.classList.toggle('is-on', on);
@@ -400,9 +408,14 @@
     return errs;
   }
 
-  function openSubmit() {
+  function openSubmit(category) {
     lastFocus = document.activeElement;
     fillCategorySelect();
+    if (typeof category === 'string' && category) {
+      var sel = $('#fCategory');
+      var match = $$('#fCategory option').filter(function (o) { return o.value === category; })[0];
+      if (match) sel.value = category;
+    }
     updatePreview();
     validateForm(false);
     $('#formStatus').textContent = '';
@@ -488,8 +501,10 @@
     });
 
     $$('[data-open-submit]').forEach(function (b) {
-      b.addEventListener('click', openSubmit);
+      b.addEventListener('click', function () { openSubmit(); });
     });
+
+    $('#emptyCatCta').addEventListener('click', function () { openSubmit(state.category); });
 
     $$('[data-close]').forEach(function (b) {
       b.addEventListener('click', closeModals);

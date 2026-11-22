@@ -223,6 +223,7 @@
     if (!f.url || !isHttpUrl(f.url)) err.url = 'url';
     if (!f.shortEn || String(f.shortEn).trim().length < 12) err.shortEn = 'short';
     if (!f.category) err.category = 'required';
+    else if (CATEGORY_IDS.indexOf(f.category) === -1) err.category = 'required';
     if (!f.languages || !f.languages.length) err.languages = 'required';
     if (!f.creator || !String(f.creator).trim()) err.creator = 'required';
     if (f.copyKo && (!f.nameKo || !String(f.nameKo).trim())) err.nameKo = 'required';
@@ -256,7 +257,7 @@
       slug: slugify(f.nameEn || f.nameKo || 'app'),
       url: String(f.url || '').trim(),
       name: name,
-      category: f.category || 'utility',
+      category: CATEGORY_IDS.indexOf(f.category) !== -1 ? f.category : 'life-utility',
       languages: ens.length ? ens : ['en'],
       noSignup: f.noSignup !== false,
       pricing: pricing,
@@ -271,7 +272,14 @@
     return JSON.stringify(jsonSpec(form), null, 2);
   }
 
-  var CATEGORY_IDS = ['ai', 'finance', 'business', 'utility'];
+  var CATEGORY_IDS = [
+    'ai-content',
+    'marketing-sns',
+    'tax-finance',
+    'business-docs',
+    'dev-security',
+    'life-utility'
+  ];
 
   function categoryLabel(id, lang, categories) {
     var list = categories || [];
