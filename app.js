@@ -20,7 +20,8 @@
     noSignup: false,
     free: false,
     byok: false,
-    sort: 'fresh'
+    sort: 'fresh',
+    submitTab: 'new'
   };
 
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
@@ -52,6 +53,10 @@
 
   function categories() {
     return (data && data.categories) || [];
+  }
+
+  function repo() {
+    return (data && data.meta && data.meta.repo) || 'MarCJ81/onetap-market';
   }
 
   /* ── language ───────────────────────────────────────────────────────── */
@@ -98,6 +103,11 @@
     renderChips();
     renderGrid();
     renderStats();
+    if (!$('#submitModal').hidden) {
+      fillUpdateApps();
+      setTab(state.submitTab);
+      updatePreviewUpdate();
+    }
     try { localStorage.setItem('otm.lang', lang); } catch (e) { /* private mode */ }
     var open = document.body.getAttribute('data-open-app');
     if (open) openDetail(open);
@@ -177,7 +187,11 @@
     var cat = Core.categoryLabel(app.category, state.lang, categories());
     return (
       '<button type="button" class="' + cls + '" data-app="' + esc(app.slug) + '" aria-haspopup="dialog">' +
-        '<span class="card__top"><span class="card__cat">' + esc(cat) + '</span><span class="card__no">' + String(app.no).padStart(2, '0') + '</span></span>' +
+        '<span class="card__top"><span class="card__cat">' + esc(cat) + '</span>' +
+          '<span class="card__topright">' +
+            '<span class="card__ver" title="' + esc(t('ver.badge')) + '">' + esc(Core.appVersion(app)) + '</span>' +
+            '<span class="card__no">' + String(app.no).padStart(2, '0') + '</span>' +
+          '</span></span>' +
         '<span class="card__name">' + esc(name) + '</span>' +
         '<span class="card__short">' + esc(short) + '</span>' +
         '<span class="card__badges">' + badgeHtml(app) + langTag(app) + '</span>' +
@@ -278,6 +292,211 @@
     return '<p class="detail__native">' + esc(other) + '</p>';
   }
 
+  function versionPill(app) {
+    return (
+      '<span class="detail__ver" title="' + esc(t('ver.badge')) + '">' +
+        esc(Core.appVersion(app)) + ' <span>' + esc(t('ver.current')) + '</span>' +
+      '</span>'
+    );
+  }
+
+  function changelogHtml(app) {
+    var list = Core.changelog(app);
+    if (!list.length) return '';
+    var items = list
+      .map(function (e, i) {
+        return (
+          '<li class="changelog__item' + (i === 0 ? ' changelog__item--latest' : '') + '">' +
+            '<span class="changelog__head">' +
+              '<span class="changelog__ver">' + esc(e.version) + '</span>' +
+              (i === 0 ? '<span class="changelog__tag">' + esc(t('ver.latest')) + '</span>' : '') +
+              '<span class="changelog__date">' + esc(e.date) + '</span>' +
+            '</span>' +
+            '<span class="changelog__notes">' + esc(pick(e.notes, state.lang)) + '</span>' +
+          '</li>'
+        );
+      })
+      .join('');
+    return (
+      '<h3>' + esc(t('modal.history')) + '</h3>' +
+      '<ol class="changelog">' + items + '</ol>' +
+      '<p class="hint" style="margin-top:8px">' + esc(t('modal.historyNote')) + '</p>'
+    );
+  }
+
+  function feedbackHtml(app) {
+    var types = Core.FEEDBACK_TYPES.map(function (tp) {
+      var label = tp === 'bug' ? t('fb.typeBug') : tp === 'feature' ? t('fb.typeFeature') : t('fb.typeReview');
+      return '<option value="' + tp + '">' + esc(label) + '</option>';
+    }).join('');
+    return (
+      '<h3>' + esc(t('modal.feedback')) + '</h3>' +
+      '<div class="fb" id="feedbackBlock" data-app="' + esc(app.slug) + '">' +
+        '<p class="fb__lead">' + esc(t('modal.feedbackLead')) + '</p>' +
+        '<div class="fb__state" id="feedbackState" aria-live="polite">' + esc(t('modal.feedbackLoading')) + '</div>' +
+        '<ul class="fb__list" id="feedbackList" hidden></ul>' +
+        '<form class="fb__form" id="feedbackForm" novalidate>' +
+          '<h4>' + esc(t('fb.title')) + '</h4>' +
+          '<div class="fb__row">' +
+            '<div class="fb__field"><label for="fbNick">' + esc(t('fb.nick')) + '</label>' +
+              '<input id="fbNick" name="nick" type="text" maxlength="40" autocomplete="off" placeholder="' + esc(t('fb.nickPlaceholder')) + '"></div>' +
+            '<div class="fb__field"><label for="fbType">' + esc(t('fb.type')) + '</label>' +
+              '<select id="fbType" name="type">' + types + '</select></div>' +
+          '</div>' +
+          '<div class="fb__field"><label for="fbContent">' + esc(t('fb.content')) + '</label>' +
+            '<textarea id="fbContent" name="content" maxlength="2000" rows="3" placeholder="' + esc(t('fb.contentPlaceholder')) + '"></textarea>' +
+            '<span class="fb__err" id="fbErr"></span></div>' +
+          '<div class="fb__actions">' +
+            '<button type="button" class="btn btn--primary" id="fbGithub">' + esc(t('fb.github')) + '</button>' +
+            '<button type="button" class="btn btn--ghost" id="fbCopy">' + esc(t('fb.copy')) + '</button>' +
+          '</div>' +
+          '<p class="fb__status" id="fbStatus" aria-live="polite"></p>' +
+          '<p class="fb__hint">' + esc(t('fb.hint')) + '</p>' +
+          '<p class="fb__hint">' + esc(t('modal.feedbackApi')) + '</p>' +
+        '</form>' +
+      '</div>'
+    );
+  }
+
+  var fbCache = {};
+
+  function paintFeedback(res, app) {
+    var stateEl = $('#feedbackState');
+    var listEl = $('#feedbackList');
+    if (!stateEl || !listEl) return;
+    var open = '<a href="' + esc(Core.feedbackFallbackUrl(repo())) +
+      '" target="_blank" rel="noopener noreferrer">' + esc(t('modal.feedbackOpen')) + '</a>';
+    if (!res || res.ok === false) {
+      stateEl.hidden = false;
+      stateEl.className = 'fb__state fb__state--bad';
+      stateEl.innerHTML = esc(t('modal.feedbackFailed')) + ' ' + open;
+      listEl.hidden = true;
+      listEl.innerHTML = '';
+      return;
+    }
+    if (!res.items.length) {
+      stateEl.hidden = false;
+      stateEl.className = 'fb__state';
+      stateEl.innerHTML = esc(t('modal.feedbackEmpty')) + ' ' + open;
+      listEl.hidden = true;
+      listEl.innerHTML = '';
+      return;
+    }
+    stateEl.hidden = true;
+    listEl.hidden = false;
+    listEl.innerHTML = res.items
+      .map(function (it) {
+        var label =
+          it.type === 'bug' ? t('fb.typeBug') : it.type === 'feature' ? t('fb.typeFeature') : t('fb.typeReview');
+        var when = it.date ? Core.formatStamp(it.date, state.lang).replace(' KST', '') : '';
+        return (
+          '<li class="fb__item">' +
+            '<a class="fb__title" href="' + esc(it.url) + '" target="_blank" rel="noopener noreferrer">' + esc(it.title) + '</a>' +
+            '<span class="fb__meta">' +
+              '<span class="fb__type">' + esc(label) + '</span>' +
+              '<span>' + esc(it.author || t('modal.feedbackAnonymous')) + '</span>' +
+              (when ? '<span>' + esc(when) + '</span>' : '') +
+              (it.number ? '<span>#' + it.number + '</span>' : '') +
+            '</span>' +
+          '</li>'
+        );
+      })
+      .join('');
+  }
+
+  /* One read-only GET to the public GitHub API, once per card per visit. It is the
+     only request this page makes, and every failure path still leaves a working
+     form — offline, 403 rate limit or a shape nobody expected. */
+  function loadFeedback(app) {
+    if (!$('#feedbackBlock')) return;
+    if (fbCache[app.slug]) {
+      paintFeedback(fbCache[app.slug], app);
+      return;
+    }
+    var stateEl = $('#feedbackState');
+    if (stateEl) {
+      stateEl.hidden = false;
+      stateEl.className = 'fb__state';
+      stateEl.textContent = t('modal.feedbackLoading');
+    }
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var timer = setTimeout(function () {
+      if (ctrl) ctrl.abort();
+    }, 8000);
+    var settle = function (res) {
+      clearTimeout(timer);
+      fbCache[app.slug] = res;
+      if (document.body.getAttribute('data-open-app') !== app.slug) return;
+      paintFeedback(res, app);
+    };
+    try {
+      fetch(Core.feedbackApiUrl(repo()), {
+        headers: { Accept: 'application/vnd.github+json' },
+        cache: 'no-store',
+        credentials: 'omit',
+        signal: ctrl ? ctrl.signal : undefined
+      })
+        .then(function (r) {
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          return r.json();
+        })
+        .then(function (payload) {
+          settle(Core.parseFeedbackIssues(payload, app, repo()));
+        })
+        .catch(function () {
+          settle({ ok: false, reason: 'network', items: [] });
+        });
+    } catch (e) {
+      settle({ ok: false, reason: 'network', items: [] });
+    }
+  }
+
+  function readFeedback() {
+    return {
+      nick: $('#fbNick') ? $('#fbNick').value : '',
+      type: $('#fbType') ? $('#fbType').value : 'review',
+      content: $('#fbContent') ? $('#fbContent').value : '',
+      lang: state.lang
+    };
+  }
+
+  function bindFeedback(app) {
+    var githubBtn = $('#fbGithub');
+    var copyBtn = $('#fbCopy');
+    if (!githubBtn || !copyBtn) return;
+    function checked() {
+      var fb = readFeedback();
+      var errs = Core.validateFeedback(fb);
+      $('#fbErr').textContent = errs.content ? t('fb.errContent') : '';
+      var ok = Object.keys(errs).length === 0;
+      $('#fbStatus').textContent = ok ? '' : t('fb.blocked');
+      return { fb: fb, ok: ok };
+    }
+    githubBtn.addEventListener('click', function () {
+      var r = checked();
+      if (!r.ok) {
+        if ($('#fbContent')) $('#fbContent').focus();
+        return;
+      }
+      window.open(Core.feedbackIssueUrl(app, r.fb, repo()), '_blank', 'noopener');
+      toast(t('toast.opened'));
+    });
+    /* Typing again clears the last complaint, so a corrected message ships cleanly. */
+    $('#feedbackForm').addEventListener('input', function () {
+      if ($('#fbErr').textContent) $('#fbErr').textContent = '';
+      if ($('#fbStatus').textContent) $('#fbStatus').textContent = '';
+    });
+    copyBtn.addEventListener('click', function () {
+      var r = checked();
+      if (!r.ok) {
+        if ($('#fbContent')) $('#fbContent').focus();
+        return;
+      }
+      copyText(Core.feedbackText(app, r.fb, state.lang), 'fb.copied');
+    });
+    loadFeedback(app);
+  }
+
   function openDetail(key) {
     var app = findApp(key);
     if (!app) { toast(t('toast.appNotFound')); return; }
@@ -296,6 +515,7 @@
           '<h2 class="detail__name" id="detailName">' + esc(pick(app.name, state.lang)) + '</h2>',
           otherName(app),
           '<div class="detail__badges">' + badgeHtml(app) + '</div>',
+          versionPill(app),
         '</header>',
         '<h3>' + esc(t('modal.about')) + '</h3>',
         '<p class="detail__text">' + esc(pick(app.long, state.lang) || pick(app.short, state.lang)) + '</p>',
@@ -316,6 +536,8 @@
         '</div>',
         '<p class="detail__link">' + esc(t('modal.linkLabel')) + ': <code>' + esc(Core.appLink(app, BASE_URL)) + '</code></p>',
         '<p class="hint" style="margin-top:6px">' + esc(t('modal.verifiedBy')) + '</p>',
+        changelogHtml(app),
+        feedbackHtml(app),
       '</div>'
     ].join('');
 
@@ -330,6 +552,7 @@
     });
     var launch = $('#detailModal [data-launch]');
     if (launch) launch.addEventListener('click', function () { toast(t('toast.opened')); });
+    bindFeedback(app);
     var panel = $('#detailModal .modal__panel');
     panel.scrollTop = 0;
   }
@@ -380,7 +603,7 @@
     var form = readForm();
     var spec = Core.jsonSpec(form);
     $('#jsonPreview').textContent = JSON.stringify(spec, null, 2);
-    var url = Core.submissionIssueUrl(form, data && data.meta ? data.meta.repo : 'MarCJ81/onetap-market');
+    var url = Core.submissionIssueUrl(form, repo());
     var parts = url.split('?');
     $('#issuePreview').setAttribute('data-url', url);
     $('#issuePreview').setAttribute('title', url);
@@ -411,6 +634,8 @@
   function openSubmit(category) {
     lastFocus = document.activeElement;
     fillCategorySelect();
+    fillUpdateApps();
+    setTab('new');
     if (typeof category === 'string' && category) {
       var sel = $('#fCategory');
       var match = $$('#fCategory option').filter(function (o) { return o.value === category; })[0];
@@ -418,10 +643,126 @@
     }
     updatePreview();
     validateForm(false);
+    updatePreviewUpdate();
+    validateUpdateForm(false);
     $('#formStatus').textContent = '';
+    $('#updateStatus').textContent = '';
     $('#submitModal').hidden = false;
     document.documentElement.style.overflow = 'hidden';
     setTimeout(function () { $('#fNameEn').focus(); }, 40);
+  }
+
+  /* ── submit tabs: new listing / version update ───────────────────────── */
+  function setTab(name) {
+    var tab = name === 'update' ? 'update' : 'new';
+    state.submitTab = tab;
+    $$('#submitTabs .tab').forEach(function (b) {
+      var on = b.getAttribute('data-tab') === tab;
+      b.classList.toggle('is-on', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    var newPanel = $('#panelNew');
+    var upPanel = $('#panelUpdate');
+    if (newPanel) newPanel.hidden = tab !== 'new';
+    if (upPanel) upPanel.hidden = tab !== 'update';
+    var titleEl = $('#submitTitle');
+    var leadEl = $('#submitLead');
+    if (titleEl) titleEl.textContent = t(tab === 'update' ? 'up.title' : 'submit.title');
+    if (leadEl) leadEl.textContent = t(tab === 'update' ? 'up.lead' : 'submit.lead');
+    var panel = $('#submitModal .modal__panel');
+    if (panel) panel.scrollTop = 0;
+  }
+
+  function fillUpdateApps() {
+    var sel = $('#uApp');
+    if (!sel) return;
+    var current = sel.value;
+    var rows = [
+      '<option value="">' + esc(t('up.appNone')) + '</option>'
+    ].concat(
+      apps().map(function (a) {
+        return (
+          '<option value="' + esc(a.slug) + '">' +
+            esc(pick(a.name, state.lang)) + ' · ' + esc(Core.appVersion(a)) +
+          '</option>'
+        );
+      })
+    );
+    sel.innerHTML = rows.join('');
+    sel.value = current && findAppIn(current) ? current : '';
+  }
+
+  function findAppIn(key) {
+    return Core.findAppIn(apps(), key);
+  }
+
+  function readUpdate() {
+    var el = function (sel) { return $(sel) ? $(sel).value : ''; };
+    return {
+      appId: el('#uApp'),
+      version: el('#uVersion'),
+      url: el('#uUrl'),
+      notesEn: el('#uNotesEn'),
+      notesKo: el('#uNotesKo'),
+      lang: state.lang
+    };
+  }
+
+  function updateErrorText(code) {
+    if (code === 'required') return t('up.errApp');
+    if (code === 'version') return t('up.errVersion');
+    if (code === 'older') return t('up.errOlder');
+    if (code === 'url') return t('submit.errUrl');
+    if (code === 'short') return t('up.errNotes');
+    return t('submit.errRequired');
+  }
+
+  function updatePreviewUpdate() {
+    var form = readUpdate();
+    var app = findAppIn(form.appId);
+    var patch = Core.updatePatch(app, form);
+    if (app && !String(form.url || '').trim()) patch.url = app.url;
+    $('#updatePreview').textContent = JSON.stringify(patch, null, 2);
+    var url = Core.updateIssueUrl(app, form, repo());
+    var parts = url.split('?');
+    $('#updateIssuePreview').setAttribute('data-url', url);
+    $('#updateIssuePreview').setAttribute('title', url);
+    $('#updateIssueHost').textContent = parts[0].replace('https://', '');
+    $('#updateIssueQuery').textContent = '?' + (parts[1] || '');
+    $('#updateIssueMeta').textContent =
+      t('submit.issueMeta') + ' ' + (parts[1] || '').length.toLocaleString('en-US') + ' ' + t('submit.issueChars');
+    return { form: form, app: app, patch: patch, url: url };
+  }
+
+  function validateUpdateForm(showErrors) {
+    var form = readUpdate();
+    var errs = Core.validateUpdate(form, apps());
+    $$('#updateForm .err').forEach(function (el) { el.textContent = ''; });
+    $$('#updateForm input').forEach(function (el) { el.classList.remove('is-bad'); });
+    if (showErrors) {
+      Object.keys(errs).forEach(function (field) {
+        var slot = $('[data-err="' + field + '"]');
+        if (slot) slot.textContent = updateErrorText(errs[field]);
+        var input = field === 'appId' ? $('#uApp') : $('#u' + field.charAt(0).toUpperCase() + field.slice(1));
+        if (input && input.classList) input.classList.add('is-bad');
+      });
+    }
+    return errs;
+  }
+
+  function submitUpdate(e) {
+    if (e) e.preventDefault();
+    var errs = validateUpdateForm(true);
+    if (Object.keys(errs).length) {
+      $('#updateStatus').textContent = t('up.blocked');
+      var first = $('#updateForm .is-bad');
+      if (first) first.focus();
+      return;
+    }
+    $('#updateStatus').textContent = '';
+    var out = updatePreviewUpdate();
+    window.open(out.url, '_blank', 'noopener');
+    toast(t('toast.opened'));
   }
 
   function submitIssue(e) {
@@ -531,6 +872,29 @@
     });
     $('#copyIssue').addEventListener('click', function () {
       copyText($('#issuePreview').getAttribute('data-url') || '', 'toast.copied');
+    });
+
+    /* submit modal: the second tab files a version update instead of a listing */
+    $$('#submitTabs .tab').forEach(function (b) {
+      b.addEventListener('click', function () { setTab(b.getAttribute('data-tab')); });
+    });
+    $('#uApp').addEventListener('change', function () {
+      var app = findAppIn($('#uApp').value);
+      $('#uVersion').value = app ? Core.nextVersion(Core.appVersion(app)) : '';
+      $('#uUrl').value = app ? app.url : '';
+      updatePreviewUpdate();
+      validateUpdateForm(false);
+    });
+    $('#updateForm').addEventListener('submit', submitUpdate);
+    $('#updateForm').addEventListener('input', function () { updatePreviewUpdate(); });
+    $('#updateForm').addEventListener('change', function () { updatePreviewUpdate(); });
+    function copyPatch() {
+      copyText(JSON.stringify(updatePreviewUpdate().patch, null, 2), 'up.copiedJson');
+    }
+    $('#copyPatch').addEventListener('click', copyPatch);
+    $('#copyPatch2').addEventListener('click', copyPatch);
+    $('#copyUpdateIssue').addEventListener('click', function () {
+      copyText($('#updateIssuePreview').getAttribute('data-url') || '', 'toast.copied');
     });
   }
 

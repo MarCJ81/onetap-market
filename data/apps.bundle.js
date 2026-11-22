@@ -5,8 +5,8 @@ globalThis.__ONETAP_MARKET__ = {
     "nameKo": "원탭 마켓",
     "tagline": "Verified no-signup web apps",
     "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
-    "version": "1.0.0",
-    "schemaVersion": 1,
+    "version": "1.1.0",
+    "schemaVersion": 2,
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
@@ -86,7 +86,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Viral multiplier per clip · Hook + 30s script · Benchmark board you keep — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 바이럴 배수 자동 계산 · 30초 대본 + 훅 · 벤치마킹 보드 저장. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "ai-vector-studio",
@@ -124,7 +135,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Bézier curve fitting · EPS · PDF · AI export · Colour quantisation — free, no paywall.",
+            "ko": "첫 공개 빌드: 베지어 곡선 피팅 · EPS·PDF·AI 내보내기 · 색상 양자화·용량 최적화. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "yearend-tax-reverse",
@@ -162,7 +184,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Card 25% threshold · Pension · IRP 9M KRW cap · Remaining deduction diagnosis — free, no paywall.",
+            "ko": "첫 공개 빌드: 카드 25% 문턱 계산 · 연금저축·IRP 900만 한도 · 공제 잔여 자동 진단. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "shorts-video-studio",
@@ -200,7 +233,26 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v2.0.0",
+      "changelog": [
+        {
+          "version": "v2.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Pro mode: the app runs free with no key, and switches to a higher-quality pass when you connect your own OpenAI, Gemini or Claude key.",
+            "ko": "Pro 모드: 키 없이도 무료로 그대로 돌아가고, 내 OpenAI·Gemini·Claude 키를 연결하면 더 높은 품질로 결과를 뽑습니다."
+          }
+        },
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: 5-cut storyboard · Real .webm recording · .srt · .vtt captions — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 5컷 스토리보드 · .webm 실제 녹화 · 자막 .srt·.vtt. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "ai-image-studio",
@@ -238,7 +290,26 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v2.0.0",
+      "changelog": [
+        {
+          "version": "v2.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Pro mode: the app runs free with no key, and switches to a higher-quality pass when you connect your own OpenAI, Gemini or Claude key.",
+            "ko": "Pro 모드: 키 없이도 무료로 그대로 돌아가고, 내 OpenAI·Gemini·Claude 키를 연결하면 더 높은 품질로 결과를 뽑습니다."
+          }
+        },
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Local background removal · 5 sizes · 6 themes · PNG · JPG · WebP — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 배경 투명화 · 규격 5종·테마 6종 · PNG·JPG·WebP. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "ai-writer-studio",
@@ -276,7 +347,26 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v2.0.0",
+      "changelog": [
+        {
+          "version": "v2.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Pro mode: the app runs free with no key, and switches to a higher-quality pass when you connect your own OpenAI, Gemini or Claude key.",
+            "ko": "Pro 모드: 키 없이도 무료로 그대로 돌아가고, 내 OpenAI·Gemini·Claude 키를 연결하면 더 높은 품질로 결과를 뽑습니다."
+          }
+        },
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Blog · thread · product copy · AI-tone check per line · 2,200-character target — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 블로그·스레드·상세 · AI 티 실시간 점검 · 2,200자 원고 목표. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "blog-seo-studio",
@@ -314,7 +404,26 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v2.0.0",
+      "changelog": [
+        {
+          "version": "v2.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Pro mode: the app runs free with no key, and switches to a higher-quality pass when you connect your own OpenAI, Gemini or Claude key.",
+            "ko": "Pro 모드: 키 없이도 무료로 그대로 돌아가고, 내 OpenAI·Gemini·Claude 키를 연결하면 더 높은 품질로 결과를 뽑습니다."
+          }
+        },
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Keyword competition grades · 12 translation-tone families · Five-part draft builder — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 키워드 경쟁률·등급 · 번역체 12계열 탐지 · 5단 원고 빌더. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "commerce-seo-studio",
@@ -352,7 +461,26 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v2.0.0",
+      "changelog": [
+        {
+          "version": "v2.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Pro mode: the app runs free with no key, and switches to a higher-quality pass when you connect your own OpenAI, Gemini or Claude key.",
+            "ko": "Pro 모드: 키 없이도 무료로 그대로 돌아가고, 내 OpenAI·Gemini·Claude 키를 연결하면 더 높은 품질로 결과를 뽑습니다."
+          }
+        },
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: 0–100 title score · Competition estimate · Seven-block detail copy — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 상품명 0~100점 · 경쟁강도 1초 계산 · 7단 상세 카피. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "cardnews-script-studio",
@@ -390,7 +518,26 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v2.0.0",
+      "changelog": [
+        {
+          "version": "v2.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Pro mode: the app runs free with no key, and switches to a higher-quality pass when you connect your own OpenAI, Gemini or Claude key.",
+            "ko": "Pro 모드: 키 없이도 무료로 그대로 돌아가고, 내 OpenAI·Gemini·Claude 키를 연결하면 더 높은 품질로 결과를 뽑습니다."
+          }
+        },
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: PNG · ZIP export · Reference layout copy · Shortform .srt captions — free, with your own key optional.",
+            "ko": "첫 공개 빌드: PNG·ZIP 내보내기 · 레퍼런스 레이아웃 복제 · 숏폼 .srt 자막. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "review-reply-studio",
@@ -428,7 +575,26 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v2.0.0",
+      "changelog": [
+        {
+          "version": "v2.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Pro mode: the app runs free with no key, and switches to a higher-quality pass when you connect your own OpenAI, Gemini or Claude key.",
+            "ko": "Pro 모드: 키 없이도 무료로 그대로 돌아가고, 내 OpenAI·Gemini·Claude 키를 연결하면 더 높은 품질로 결과를 뽑습니다."
+          }
+        },
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Three reply tones · Batch CSV replies · Fake-review rebuttal — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 답글 3안·말투 3종 · 일괄 답글 CSV · 허위 리뷰 소명서. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "ai-backoffice-offer",
@@ -470,7 +636,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Three minutes a day to submit · Same-day delivery · Ad-rule checked — a human-run service, priced monthly and labelled as paid.",
+            "ko": "첫 공개 빌드: 하루 3분 접수 · 당일 납품 · 광고 규정 검수. 사람이 붙는 월 정액 서비스(유료로 표시)으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "payslip-calculator",
@@ -508,7 +685,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: 2026 contribution rates · Weekly holiday pay under 5 staff · One-page A4 print — free, no paywall.",
+            "ko": "첫 공개 빌드: 2026 요율 반영 · 5인 미만 주휴수당 · A4 1쪽 인쇄. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "tax-margin-calculator",
@@ -546,7 +734,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Simplified vs standard VAT · 3.3% withholding · Monthly net simulation — free, no paywall.",
+            "ko": "첫 공개 빌드: 간이 vs 일반 비교 · 3.3% 종소세 계산 · 월 순수익 시뮬. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "severance-leave-calculator",
@@ -584,7 +783,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Severance and leave together · Higher of average or ordinary wage · Fiscal-year comparison — free, no paywall.",
+            "ko": "첫 공개 빌드: 퇴직금·연차 동시 계산 · 평균·통상임금 큰 값 적용 · 회계연도 정산 비교. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "pdf-sign-stamp",
@@ -622,7 +832,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Zero uploads · Transparent seal maker · Five contract templates — free, no paywall.",
+            "ko": "첫 공개 빌드: 서버 전송 0건 · 투명 도장 제작 · 계약서 5종 양식. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "agency-proposal-maker",
@@ -660,7 +881,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Five price presets · Two-page A4 PDF · Wording check — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 단가 프리셋 5종 · A4 2쪽 PDF · 문구 진단·교정. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "influencer-campaign-board",
@@ -698,7 +930,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Applicant pipeline · Brief psychology check · CPV · ROI report — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 지원자 파이프라인 · 공고문 심리 진단 · CPV·ROI 리포트. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "linkhub-studio",
@@ -736,7 +979,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Zero-request HTML · One-minute inquiry form · Your logo, your theme — free, no paywall.",
+            "ko": "첫 공개 빌드: 외부 요청 0건 HTML · 1분 문의폼 · 로고·테마 자유. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "youtube-comment-analyzer",
@@ -774,7 +1028,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Four-intent tagging · FAQ from repeated questions · Pinned comment copy — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 4분류 자동 태깅 · FAQ·고정댓글 추출 · 카피 제안. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "ad-law-checker",
@@ -812,7 +1077,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: 50 rules in one pass · Sponsorship disclosure check · Alternative wording — free, no paywall.",
+            "ko": "첫 공개 빌드: 50개 규칙 1초 검수 · 대가성·고지 점검 · 대체 문구 제안. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "privacy-security-guard",
@@ -850,7 +1126,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Automatic masking · Phishing risk score · Photo GPS removal — free, no paywall.",
+            "ko": "첫 공개 빌드: 개인정보 자동 마스킹 · 피싱 링크 위험 점수 · 사진 GPS·메타 삭제. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "ics-viewer-online",
@@ -888,7 +1175,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: RFC 5545 validation · CSV · TSV · JSON export · Sample calendar included — free, no paywall.",
+            "ko": "첫 공개 빌드: RFC 5545 검증 · CSV·TSV·JSON 내보내기 · 샘플 캘린더 내장. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "invoice-receipt-pl-generator",
@@ -926,7 +1224,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Invoice · quote · receipt · P&L · BigInt cent arithmetic · Print or save as PDF — free, no paywall.",
+            "ko": "첫 공개 빌드: 인보이스·견적·영수증·손익 · BigInt 센트 계산 · PDF 인쇄·저장. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "llm-cost-llms-txt",
@@ -964,7 +1273,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Per-request to yearly cost · Budget reverse calculation · llms.txt generator — free, no paywall.",
+            "ko": "첫 공개 빌드: 요청당~연간 비용 · 예산 역산 · llms.txt 생성. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "proof-of-work-report",
@@ -1002,7 +1322,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: Finished items with evidence links · One-line share link · A4 one-page PDF — free, no paywall.",
+            "ko": "첫 공개 빌드: 완료·근거 링크 증빙 · 공유 링크 한 줄 · A4 1쪽 PDF. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     },
     {
       "id": "price-radar-kr",
@@ -1040,7 +1371,18 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T02:16:41.672Z"
+      "lastChecked": "2026-11-22T02:16:41.672Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-22",
+          "notes": {
+            "en": "Initial build on the shelf: 6 trades · 54 line items · Verdict on your quote · JSON · CSV export — free, no paywall.",
+            "ko": "첫 공개 빌드: 6업종 54품목 시세 · 받은 견적 판정 · JSON·CSV 내보내기. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
     }
   ]
 };

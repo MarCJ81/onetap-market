@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>OneTap Market — verified no-signup web apps</title>
-<meta name="description" content="A market of web apps that load without an account. Every listing shows a live HTTP check, no-signup status and a free or bring-your-own-key price, refreshed daily.">
+<meta name="description" content="A market of web apps that load without an account. Every listing shows a live HTTP check, no-signup status, a free or bring-your-own-key price and its own version history, refreshed daily.">
 <meta name="robots" content="index, follow">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#F8FAFC">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OneTap Market">
 <meta property="og:title" content="OneTap Market — apps you can use in one tap">
-<meta property="og:description" content="26 listings, each one checked for a live server, no signup requirement and a free or BYOK price. Refresh date on every card.">
+<meta property="og:description" content="26 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.">
 <meta property="og:url" content="https://marcj81.github.io/onetap-market/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ko_KR">
@@ -289,9 +289,15 @@
       <header class="modal__head">
         <p class="eyebrow eyebrow--sm"><span class="dot" aria-hidden="true"></span><span data-i18n="nav.submit">Submit an app</span></p>
         <h2 id="submitTitle" data-i18n="submit.title">Submit your web app</h2>
-        <p class="muted" data-i18n="submit.lead">Listing is free and takes one form. If your app loads without an account, we will check the URL and put it on the shelf.</p>
+        <p class="muted" id="submitLead" data-i18n="submit.lead">Listing is free and takes one form. If your app loads without an account, we will check the URL and put it on the shelf.</p>
       </header>
 
+      <div class="tabs" id="submitTabs" role="tablist" aria-label="Submit an app">
+        <button type="button" class="tab is-on" id="tabNew" role="tab" aria-selected="true" aria-controls="panelNew" data-tab="new" data-i18n="submit.tabNew">New app</button>
+        <button type="button" class="tab" id="tabUpdate" role="tab" aria-selected="false" aria-controls="panelUpdate" data-tab="update" data-i18n="submit.tabUpdate">Update an app</button>
+      </div>
+
+      <div class="tabpanel" id="panelNew" role="tabpanel" aria-labelledby="tabNew">
       <ol class="steps">
         <li><span>1</span><p data-i18n="submit.how1">Send the form. It opens a GitHub issue with your answers already filled in.</p></li>
         <li><span>2</span><p data-i18n="submit.how2">The daily checker hits your URL. A 200 and no signup wall gets it listed.</p></li>
@@ -375,6 +381,63 @@
           <button type="button" class="btn btn--ghost" id="copySpec2" data-i18n="submit.btnJson">Copy JSON spec</button>
         </div>
       </form>
+      </div>
+
+      <div class="tabpanel" id="panelUpdate" role="tabpanel" aria-labelledby="tabUpdate" hidden>
+        <form class="form" id="updateForm" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="uApp" data-i18n="up.app">Which app</label>
+              <select id="uApp" name="appId"></select>
+              <span class="err" data-err="appId"></span>
+            </div>
+            <div class="form__field">
+              <label for="uVersion" data-i18n="up.version">New version</label>
+              <input id="uVersion" name="version" type="text" maxlength="14" placeholder="v1.1.0" autocomplete="off">
+              <span class="err" data-err="version"></span>
+            </div>
+          </div>
+          <p class="hint" data-i18n="up.versionHint">Next release number — higher than the one on the card, e.g. v1.1.0.</p>
+          <div class="form__field">
+            <label for="uUrl" data-i18n="up.url">Live URL (only if it changed)</label>
+            <input id="uUrl" name="url" type="url" inputmode="url" placeholder="https://" autocomplete="off">
+            <span class="err" data-err="url"></span>
+          </div>
+          <div class="form__field">
+            <label for="uNotesEn" data-i18n="up.notesEn">What changed (English)</label>
+            <input id="uNotesEn" name="notesEn" type="text" maxlength="400" autocomplete="off">
+            <span class="err" data-err="notesEn"></span>
+          </div>
+          <div class="form__field">
+            <label for="uNotesKo" data-i18n="up.notesKo">What changed (Korean, optional)</label>
+            <input id="uNotesKo" name="notesKo" type="text" maxlength="400" autocomplete="off">
+            <span class="err" data-err="notesKo"></span>
+          </div>
+
+          <div class="form__preview">
+            <div class="preview__head">
+              <span data-i18n="up.previewJson">JSON patch preview</span>
+              <button type="button" class="linkbtn" id="copyPatch" data-i18n="up.btnJson">Copy the patch</button>
+            </div>
+            <pre id="updatePreview" aria-live="polite"></pre>
+            <p class="hint" data-i18n="submit.hintJson">Paste this object into the apps array in data/apps.json and open a pull request.</p>
+            <div class="preview__head preview__head--issue">
+              <span data-i18n="up.previewIssue">Update issue preview</span>
+            </div>
+            <p class="issuelink" id="updateIssuePreview">
+              <span class="issuelink__host" id="updateIssueHost">github.com/MarCJ81/onetap-market/issues/new</span>
+              <span class="issuelink__query" id="updateIssueQuery">—</span>
+              <span class="issuelink__meta"><span id="updateIssueMeta">—</span><button type="button" class="linkbtn" id="copyUpdateIssue" data-i18n="up.copyIssue">Copy update URL</button></span>
+            </p>
+          </div>
+
+          <p class="form__status" id="updateStatus" aria-live="polite"></p>
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary" id="openUpdateIssue" data-i18n="up.btnIssue">Open prefilled update issue</button>
+            <button type="button" class="btn btn--ghost" id="copyPatch2" data-i18n="up.btnJson">Copy the patch</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>

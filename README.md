@@ -6,7 +6,8 @@ with a liveness check stamped on every card. It is the global-facing counterpart
 surface that outside makers can submit to.
 
 - Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
-- Version: **1.0.0** (2026-11-22)
+- Version: **1.1.0** (2026-11-22) — adds per-app feedback, version history and the
+  creator update request
 - Files: `index.html` · `privacy.html` · `styles.css` · `i18n.js` · `core.js` · `app.js`
   · `data/apps.json` · `data/apps.bundle.js` · `scripts/` · `.github/workflows/daily-verify.yml`
   · `assets/fonts/` (local PlexKR, no CDN)
@@ -25,6 +26,12 @@ surface that outside makers can submit to.
    summary too, so an English visitor is never shown a blank card.
 4. **A submission pipeline that works at zero cost** — the form builds a pre-filled
    GitHub issue URL *and* the exact JSON object to paste into `data/apps.json`.
+5. **Feedback and version history on every card** — the detail modal lists the app's
+   releases (version, date, EN/KO note), and its feedback is read from the public
+   GitHub issues labelled `feedback`, filtered to that app. Nothing needs a server.
+6. **Updates ship through the same door** — the submit modal's second tab asks for the
+   app, the new version, the live URL and what changed, previews the JSON patch it
+   would apply, and opens an issue labelled `update`.
 
 ## Layout
 
@@ -56,9 +63,20 @@ surface that outside makers can submit to.
   "long": { "en": "…", "ko": "…" },
   "features": { "en": ["…", "…", "…"], "ko": ["…", "…", "…"] },
   "httpStatus": 200,
-  "lastChecked": "2026-11-22T02:05:41.000Z"
+  "lastChecked": "2026-11-22T02:05:41.000Z",
+  "version": "v2.0.0",
+  "changelog": [
+    { "version": "v2.0.0", "date": "2026-11-22",
+      "notes": { "en": "Pro mode: free without a key, higher quality with your own key.", "ko": "Pro 모드: 키 없이 무료, 내 키를 넣으면 더 높은 품질." } },
+    { "version": "v1.0.0", "date": "2026-11-22",
+      "notes": { "en": "Initial build on the shelf: …", "ko": "첫 공개 빌드: …" } }
+  ]
 }
 ```
+
+- `version` is `vX.Y.Z` and always equals `changelog[0].version`; the changelog is
+  newest-first, one to four releases, each with an EN and a KO note. Seven apps that
+  received the Pro dual engine ship as `v2.0.0`, the other nineteen as `v1.0.0`.
 
 - `category` is one of six fields: `ai-content` · `marketing-sns` · `tax-finance` ·
   `business-docs` · `dev-security` · `life-utility` (0 listings, open for outside
@@ -87,8 +105,24 @@ The published repository carries the site only. The test harness (`test.js`,
 `uitest.py`) and the preview PNGs stay in the local working folder and are listed in
 `.gitignore` — they are shipped to nobody and served from nowhere.
 
-Current state: **355 unit checks**, **125 browser checks**, 0 failures;
+Current state: **746 unit checks**, **278 browser checks**, 0 failures;
 26/26 listings answered HTTP 200 on 2026-11-22 11:16 KST.
+
+## Feedback and updates at zero cost
+
+- The detail modal reads
+  `https://api.github.com/repos/MarCJ81/onetap-market/issues?labels=feedback&state=open&per_page=30`
+  once per card per visit, without credentials, and keeps only the issues whose body
+  names that app's slug (or whose title names it). A 403 rate limit, an offline browser
+  or an unexpected payload never breaks the card: the list is replaced by a notice and
+  a link to the issue list, and the form below still builds its URL.
+- The feedback form asks for an optional nickname, a kind (bug / feature / usage note)
+  and the message, then opens an issue titled `[Feedback: <app>] <kind>` labelled
+  `feedback`, with the slug, version and text in the body. A visitor without a GitHub
+  account can copy the same text instead.
+- The update tab builds `[Update] <app> <version>` labelled `update` plus the JSON patch
+  (`version` + a prepended `changelog` entry dated in KST) that `data/apps.json` needs.
+- This one GET is the only request the page makes, and `privacy.html` says so.
 
 ## Accepting a submission
 
@@ -120,8 +154,10 @@ GitHub Pages: publish from `main` → `/ (root)`, then check
 
 ## Rules this project keeps
 
-- No external request: no CDN, no analytics, no ad script, no remote font. The only
-  outbound links are the listings themselves and the GitHub issue intake.
+- No tracker, no CDN, no analytics, no ad script, no remote font. The only third-party
+  request is the read-only GitHub API call that loads a card's feedback — disclosed in
+  `privacy.html` and made without credentials. The only outbound links are the listings
+  themselves and the GitHub issue intake.
 - No personal data in the source: no real names, phone numbers, account ids or blog
   names. Creator attribution is `OneTap Labs` / `MarCJ81`. `test.js` enforces this by
   string search over the shipped files.
