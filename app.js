@@ -539,10 +539,12 @@
           '<div class="fact"><span class="fact__k">' + esc(t('modal.signup')) + '</span><span class="fact__v">' + esc(app.noSignup ? t('modal.signupNo') : '—') + '</span></div>',
           '<div class="fact"><span class="fact__k">' + esc(t('modal.pricing')) + '</span><span class="fact__v">' + pricedLabel(app) + '</span></div>',
           '<div class="fact"><span class="fact__k">' + esc(t('modal.languages')) + '</span><span class="fact__v">' + esc(langs.join(' · ')) + '</span></div>',
+          '<div class="fact"><span class="fact__k">' + esc(t('modal.creator')) + '</span><span class="fact__v">' + esc((data.meta && data.meta.creator) || 'OneTap Labs') + '</span></div>',
+          /* The AI row closes the table at full width, so the two-column grid
+             never leaves an empty cell on an odd number of facts. */
           (app.freeAi
             ? '<div class="fact fact--wide"><span class="fact__k">' + esc(t('modal.ai')) + '</span><span class="fact__v">' + esc(t('modal.aiFree')) + '</span></div>'
             : ''),
-          '<div class="fact"><span class="fact__k">' + esc(t('modal.creator')) + '</span><span class="fact__v">' + esc((data.meta && data.meta.creator) || 'OneTap Labs') + '</span></div>',
         '</div>',
         '<div class="detail__actions">',
           '<a class="btn btn--primary" href="' + esc(app.url) + '" target="_blank" rel="noopener noreferrer" data-launch>' + esc(t('modal.launch')) + ' ↗</a>',
