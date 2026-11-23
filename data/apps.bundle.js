@@ -5,7 +5,7 @@ globalThis.__ONETAP_MARKET__ = {
     "nameKo": "원탭 마켓",
     "tagline": "Verified no-signup web apps",
     "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "schemaVersion": 2,
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
@@ -1131,7 +1131,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 50개 규칙 1초 검수 · 대가성·고지 점검 · 대체 문구 제안. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "privacy-security-guard",
@@ -1433,7 +1434,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 6업종 54품목 시세 · 받은 견적 판정 · JSON·CSV 내보내기. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "onetap-team-room",

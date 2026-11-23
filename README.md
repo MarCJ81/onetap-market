@@ -6,12 +6,15 @@ with a liveness check stamped on every card. It is the global-facing counterpart
 surface that outside makers can submit to.
 
 - Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
-- Version: **1.3.0** (2026-11-23) — 27호기 `onetap-team-room` and 28호기
-  `onetap-ad-audit` join the shelf (28 listings), and every app whose free pass
-  runs without a key carries a `Free AI taste` badge (13 of them). The last check
-  time is printed on every card front (`Checked 11/23 18:58 KST` / `점검 11/23 18:58`),
-  the full date and the age stay in the tooltip and the detail modal; 1.1.0 added
-  per-app feedback, version history and the creator update request
+- Version: **1.3.1** (2026-11-23) — the `Free AI taste` badge now follows the code
+  instead of a guess: every app that really calls the free AI server carries it
+  (15 of 28 — the 13 BYOK studios plus `ad-law-checker` and `price-radar-kr`,
+  which call the same server while keeping the plain `free` price label). Still
+  on the 1.3.0 shelf: 27호기 `onetap-team-room` and 28호기 `onetap-ad-audit`
+  (28 listings), the last check
+  time printed on every card front (`Checked 11/23 18:58 KST` / `점검 11/23 18:58`),
+  the full date and the age in the tooltip and the detail modal, and 1.1.0's
+  per-app feedback, version history and creator update request
 - Files: `index.html` · `privacy.html` · `styles.css` · `i18n.js` · `core.js` · `app.js`
   · `data/apps.json` · `data/apps.bundle.js` · `scripts/` · `.github/workflows/daily-verify.yml`
   · `assets/fonts/` (local PlexKR, no CDN)
@@ -20,9 +23,10 @@ surface that outside makers can submit to.
 
 1. **Three badges plus one, backed by data** — `Live checked` (HTTP 200 from the checker),
    `No signup` (the URL opens the app, not a gate), `Free` or `Free · BYOK`
-   (own API key optional), and `Free AI taste` on the 13 apps that finish in free
+   (own API key optional), and `Free AI taste` on the 15 apps that finish in free
    mode without a key and take the visitor's own OpenAI · Gemini · Claude key for
-   the Pro pass. The one paid service in the catalogue is labelled
+   the Pro pass (13 studios on the `Free · BYOK` label, plus `ad-law-checker` and
+   `price-radar-kr` on the plain `Free` label). The one paid service in the catalogue is labelled
    `Paid service` instead, so the badge never lies. Each card front also prints
    the time of that check (`Checked 11/23 10:08 KST` / `점검 11/23 10:08`), so a
    visitor can see how fresh the verdict is without opening anything.
@@ -94,7 +98,10 @@ surface that outside makers can submit to.
   (a human service; add `priceNote` and the card turns amber).
 - `freeAi: true` paints the `Free AI taste` badge and feeds the filter toggle: the
   app finishes in free mode with no key and takes the visitor's own OpenAI · Gemini ·
-  Claude key for the Pro pass. Only `free-byok` listings set it (13 of 28).
+  Claude key for the Pro pass. Set it only after checking the app's own code calls
+  `https://free-ai-taste.onetap-ai.workers.dev` (or `generateFree()`); it is not tied
+  to the `free-byok` price label — 15 of 28 carry it, 13 `free-byok` studios plus
+  `ad-law-checker` and `price-radar-kr`.
 - `wide: true` makes the card span two grid columns (used by the two newest, 27 and 28,
   so the last row of the 4-column grid closes).
 - `httpStatus` and `lastChecked` are written by the checker — do not hand-edit them.
