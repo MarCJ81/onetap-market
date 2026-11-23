@@ -540,7 +540,7 @@
           '<div class="fact"><span class="fact__k">' + esc(t('modal.pricing')) + '</span><span class="fact__v">' + pricedLabel(app) + '</span></div>',
           '<div class="fact"><span class="fact__k">' + esc(t('modal.languages')) + '</span><span class="fact__v">' + esc(langs.join(' · ')) + '</span></div>',
           (app.freeAi
-            ? '<div class="fact"><span class="fact__k">' + esc(t('modal.ai')) + '</span><span class="fact__v">' + esc(t('modal.aiFree')) + '</span></div>'
+            ? '<div class="fact fact--wide"><span class="fact__k">' + esc(t('modal.ai')) + '</span><span class="fact__v">' + esc(t('modal.aiFree')) + '</span></div>'
             : ''),
           '<div class="fact"><span class="fact__k">' + esc(t('modal.creator')) + '</span><span class="fact__v">' + esc((data.meta && data.meta.creator) || 'OneTap Labs') + '</span></div>',
         '</div>',
