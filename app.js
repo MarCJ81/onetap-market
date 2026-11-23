@@ -186,7 +186,7 @@
   }
 
   function cardHtml(app) {
-    var wide = app.no === 1 || app.no === 9 || app.no === 16 || app.no === 25 || !!app.wide;
+    var wide = app.no === 1 || app.no === 9 || app.no === 16 || app.no === 26 || !!app.wide;
     var cls = 'card' + (wide ? ' card--wide' : '') + (app.pricing === 'paid' ? ' card--paid' : '') +
       (app.httpStatus === 200 ? '' : ' card--down');
     var name = pick(app.name, state.lang);

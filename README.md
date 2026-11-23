@@ -103,8 +103,9 @@ surface that outside makers can submit to.
   `https://free-ai-taste.onetap-ai.workers.dev` (or `generateFree()`); it is not tied
   to the `free-byok` price label — 16 of 29 carry it, 14 `free-byok` studios plus
   `ad-law-checker` and `price-radar-kr`.
-- `wide: true` makes the card span two grid columns (used by the three newest, 27, 28
-  and 29, so the last row of the 4-column grid closes).
+- `wide: true` makes the card span two grid columns. With the three anchors (`no` 1, 9
+  and 16) plus the newest four (`no` 26 to 29) every row of the 4-column grid fills
+  exactly, so the last row closes without a gap.
 - `httpStatus` and `lastChecked` are written by the checker — do not hand-edit them.
 
 ## Run it
