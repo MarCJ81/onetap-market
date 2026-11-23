@@ -6,12 +6,13 @@ with a liveness check stamped on every card. It is the global-facing counterpart
 surface that outside makers can submit to.
 
 - Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
-- Version: **1.3.1** (2026-11-23) — the `Free AI taste` badge now follows the code
-  instead of a guess: every app that really calls the free AI server carries it
-  (15 of 28 — the 13 BYOK studios plus `ad-law-checker` and `price-radar-kr`,
-  which call the same server while keeping the plain `free` price label). Still
-  on the 1.3.0 shelf: 27호기 `onetap-team-room` and 28호기 `onetap-ad-audit`
-  (28 listings), the last check
+- Version: **1.4.0** (2026-11-23) — 29호기 `onetap-clip-factory` (OneTap Clip
+  Factory / 원탭 클립 팩토리) joins the shelf, so the list is **29 listings**.
+  The `Free AI taste` badge still follows the code instead of a guess: every app
+  that really calls the free AI server carries it (16 of 29 — the 14 BYOK studios
+  plus `ad-law-checker` and `price-radar-kr`, which call the same server while
+  keeping the plain `free` price label). Also on the shelf: 27호기
+  `onetap-team-room` and 28호기 `onetap-ad-audit`, the last check
   time printed on every card front (`Checked 11/23 18:58 KST` / `점검 11/23 18:58`),
   the full date and the age in the tooltip and the detail modal, and 1.1.0's
   per-app feedback, version history and creator update request
@@ -23,9 +24,9 @@ surface that outside makers can submit to.
 
 1. **Three badges plus one, backed by data** — `Live checked` (HTTP 200 from the checker),
    `No signup` (the URL opens the app, not a gate), `Free` or `Free · BYOK`
-   (own API key optional), and `Free AI taste` on the 15 apps that finish in free
+   (own API key optional), and `Free AI taste` on the 16 apps that finish in free
    mode without a key and take the visitor's own OpenAI · Gemini · Claude key for
-   the Pro pass (13 studios on the `Free · BYOK` label, plus `ad-law-checker` and
+   the Pro pass (14 studios on the `Free · BYOK` label, plus `ad-law-checker` and
    `price-radar-kr` on the plain `Free` label). The one paid service in the catalogue is labelled
    `Paid service` instead, so the badge never lies. Each card front also prints
    the time of that check (`Checked 11/23 10:08 KST` / `점검 11/23 10:08`), so a
@@ -33,7 +34,7 @@ surface that outside makers can submit to.
 2. **EN / KO in one tap** — the whole interface, the card copy, the badges, the filters,
    the submission form and the page `<title>`/meta description switch. Browser language
    decides the first load; the choice is remembered in `localStorage` (`otm.lang`).
-3. **28 seeded listings** — 25 Korean + 3 global English (`ics-viewer-online`,
+3. **29 seeded listings** — 26 Korean + 3 global English (`ics-viewer-online`,
    `invoice-receipt-pl-generator`, `llm-cost-llms-txt`). Korean apps carry an English
    summary too, so an English visitor is never shown a blank card.
 4. **A submission pipeline that works at zero cost** — the form builds a pre-filled
@@ -100,10 +101,10 @@ surface that outside makers can submit to.
   app finishes in free mode with no key and takes the visitor's own OpenAI · Gemini ·
   Claude key for the Pro pass. Set it only after checking the app's own code calls
   `https://free-ai-taste.onetap-ai.workers.dev` (or `generateFree()`); it is not tied
-  to the `free-byok` price label — 15 of 28 carry it, 13 `free-byok` studios plus
+  to the `free-byok` price label — 16 of 29 carry it, 14 `free-byok` studios plus
   `ad-law-checker` and `price-radar-kr`.
-- `wide: true` makes the card span two grid columns (used by the two newest, 27 and 28,
-  so the last row of the 4-column grid closes).
+- `wide: true` makes the card span two grid columns (used by the three newest, 27, 28
+  and 29, so the last row of the 4-column grid closes).
 - `httpStatus` and `lastChecked` are written by the checker — do not hand-edit them.
 
 ## Run it
@@ -126,8 +127,8 @@ The published repository carries the site only. The test harness (`test.js`,
 `uitest.py`) and the preview PNGs stay in the local working folder and are listed in
 `.gitignore` — they are shipped to nobody and served from nowhere.
 
-Current state: **815 unit checks**, **300 browser checks**, 0 failures;
-28/28 listings answered HTTP 200 on 2026-11-23 18:58 KST.
+Current state: **830 unit checks**, **316 browser checks**, 0 failures;
+29/29 listings answered HTTP 200 on 2026-11-23 24:09 KST.
 
 ## Feedback and updates at zero cost
 

@@ -5,16 +5,16 @@ globalThis.__ONETAP_MARKET__ = {
     "nameKo": "원탭 마켓",
     "tagline": "Verified no-signup web apps",
     "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
-    "version": "1.3.1",
+    "version": "1.4.0",
     "schemaVersion": 2,
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
-    "lastFullCheck": "2026-11-23T09:58:48.403Z",
-    "lastFullCheckOk": 28,
-    "lastFullCheckTotal": 28,
+    "lastFullCheck": "2026-11-23T15:09:35.310Z",
+    "lastFullCheckOk": 29,
+    "lastFullCheckTotal": 29,
     "verifyWindowHours": 24,
-    "lastCheckDurationMs": 1037,
+    "lastCheckDurationMs": 992,
     "checkedBy": "scripts/verify-apps.mjs"
   },
   "categories": [
@@ -86,7 +86,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -136,7 +136,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -193,7 +193,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -242,7 +242,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -300,7 +300,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v2.0.1",
       "changelog": [
         {
@@ -366,7 +366,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -424,7 +424,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -482,7 +482,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -540,7 +540,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -598,7 +598,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -660,7 +660,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -709,7 +709,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -758,7 +758,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -807,7 +807,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -856,7 +856,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -913,7 +913,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -963,7 +963,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1013,7 +1013,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1070,7 +1070,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1120,7 +1120,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1170,7 +1170,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1219,7 +1219,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1268,7 +1268,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1325,7 +1325,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1374,7 +1374,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1423,7 +1423,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1475,7 +1475,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1526,7 +1526,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "lastChecked": "2026-11-23T15:09:35.310Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1535,6 +1535,57 @@ globalThis.__ONETAP_MARKET__ = {
           "notes": {
             "en": "Initial build on the shelf: Meta · Naver CSV with CP949 · off recommendation and budget shift · CSV budget plan and MD report — free, with your own key optional.",
             "ko": "첫 공개 빌드: 메타·네이버 CSV·CP949 · OFF 권장·예산 재배분 · CSV 예산안·MD 리포트. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "onetap-clip-factory",
+      "no": 29,
+      "slug": "onetap-clip-factory",
+      "url": "https://marcj81.github.io/onetap-clip-factory/",
+      "name": {
+        "en": "OneTap Clip Factory",
+        "ko": "원탭 클립 팩토리"
+      },
+      "category": "ai-content",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "freeAi": true,
+      "wide": true,
+      "short": {
+        "en": "Feed it one long landscape video and it drops the dead air, finds the scene cuts and renders several 9:16 MP4 clips.",
+        "ko": "긴 가로 영상 하나를 넣으면 죽은 초를 지우고 장면 컷으로 나눠 9:16 숏폼 MP4 여러 개로 뽑습니다."
+      },
+      "long": {
+        "en": "Drop a lecture, vlog, game or interview recording and it cuts the dead air from a 20ms loudness envelope, finds scene cuts in sampled frames, and splits the take into clips of around fifteen seconds. Inside each clip a column map of skin tone, motion and centre weight moves the 9:16 crop with the subject, four caption styles can be burned in, and the render writes real H.264 MP4 files plus a ZIP — all in the tab, with no upload. The free AI taste writes the title, hook and hashtags from the clip's own captions.",
+        "ko": "강의·브이로그·게임·인터뷰 녹화를 그대로 넣으면 20ms 단위 음량으로 죽은 초를 지우고, 표본 프레임에서 장면 컷을 찾아 15초 안팎 클립으로 나눕니다. 클립마다 열별 피부톤·움직임·중앙 가중으로 피사체를 따라 9:16 크롭을 옮기고, 자막 4종을 구워 실제 H.264 MP4와 ZIP을 브라우저 안에서 만듭니다. 영상·음성은 업로드하지 않고, 무료 AI 맛보기가 클립 자막만으로 제목·훅·해시태그를 씁니다."
+      },
+      "features": {
+        "en": [
+          "Dead-air + scene-cut detect",
+          "9:16 subject-following crop",
+          "H.264 MP4 · ZIP in the tab"
+        ],
+        "ko": [
+          "무음·장면 컷 자동 감지",
+          "9:16 피사체 추적 리프레임",
+          "H.264 MP4·ZIP 브라우저 렌더"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-23T15:09:35.310Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-23",
+          "notes": {
+            "en": "First public build: dead-air removal, scene-cut detect, 9:16 subject tracking, four caption styles, real H.264 MP4 and ZIP — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 무음 제거·장면 컷 감지·9:16 피사체 추적·자막 4종·실제 H.264 MP4와 ZIP. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
       ]
