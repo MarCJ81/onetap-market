@@ -78,7 +78,8 @@
     'filter.resultMany': 'apps',
     'filter.resultNone': 'No match',
 
-    'card.details': 'Verification details',
+    'card.details': 'Details',
+    'card.detailsFull': 'Verification details',
     'card.open': 'Launch app',
     'card.checked': 'Checked',
     'card.saves': 'Replaces a paid tool',
@@ -320,9 +321,10 @@
     'filter.resultMany': '개',
     'filter.resultNone': '결과 없음',
 
-    'card.details': '검증 상세',
+    'card.details': '상세',
+    'card.detailsFull': '검증 상세',
     'card.open': '앱 열기',
-    'card.checked': '확인',
+    'card.checked': '점검',
     'card.saves': '유료 도구 대체',
 
     'empty.title': '조건에 맞는 앱이 없습니다',

@@ -5,16 +5,16 @@ globalThis.__ONETAP_MARKET__ = {
     "nameKo": "원탭 마켓",
     "tagline": "Verified no-signup web apps",
     "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "schemaVersion": 2,
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
-    "lastFullCheck": "2026-11-22T07:11:49.509Z",
+    "lastFullCheck": "2026-11-23T01:08:23.623Z",
     "lastFullCheckOk": 26,
     "lastFullCheckTotal": 26,
     "verifyWindowHours": 24,
-    "lastCheckDurationMs": 1008,
+    "lastCheckDurationMs": 1006,
     "checkedBy": "scripts/verify-apps.mjs"
   },
   "categories": [
@@ -86,7 +86,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -135,7 +135,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -192,7 +192,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -241,7 +241,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -298,7 +298,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v2.0.1",
       "changelog": [
         {
@@ -363,7 +363,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -420,7 +420,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -477,7 +477,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -534,7 +534,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -591,7 +591,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -652,7 +652,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -701,7 +701,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -750,7 +750,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -799,7 +799,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -848,7 +848,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -905,7 +905,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -954,7 +954,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1003,7 +1003,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1060,7 +1060,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1109,7 +1109,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1158,7 +1158,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1207,7 +1207,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1256,7 +1256,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1313,7 +1313,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1362,7 +1362,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1411,7 +1411,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-22T07:11:49.509Z",
+      "lastChecked": "2026-11-23T01:08:23.623Z",
       "version": "v1.0.0",
       "changelog": [
         {

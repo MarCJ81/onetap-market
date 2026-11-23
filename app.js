@@ -196,9 +196,13 @@
         '<span class="card__short">' + esc(short) + '</span>' +
         '<span class="card__badges">' + badgeHtml(app) + langTag(app) + '</span>' +
         '<span class="card__foot">' +
-          '<span class="card__check"><span class="pulse' + (app.httpStatus === 200 ? '' : ' pulse--down') + '"></span>' +
-            esc(t('card.checked')) + ' ' + esc(Core.timeAgo(app.lastChecked, state.lang)) + '</span>' +
-          '<span class="card__link">' + esc(t('card.details')) + ' →</span>' +
+          '<span class="card__check" title="' +
+            esc(Core.formatStamp(app.lastChecked, state.lang) + ' · ' + Core.timeAgo(app.lastChecked, state.lang)) +
+            '"><span class="pulse' + (app.httpStatus === 200 ? '' : ' pulse--down') + '"></span>' +
+            '<span class="card__check-txt">' + esc(t('card.checked')) + ' ' +
+              esc(Core.formatShortStamp(app.lastChecked, state.lang)) + '</span></span>' +
+          '<span class="card__link" title="' + esc(t('card.detailsFull')) + '">' +
+            esc(t('card.details')) + ' →</span>' +
         '</span>' +
       '</button>'
     );

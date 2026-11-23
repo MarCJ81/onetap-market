@@ -9,6 +9,7 @@
  *   OneTapMarketCore.jsonSpec(form)
  *   OneTapMarketCore.validateSubmission(form)
  *   OneTapMarketCore.formatStamp(iso, lang)
+ *   OneTapMarketCore.formatShortStamp(iso, lang)
  *   OneTapMarketCore.timeAgo(iso, lang, now)
  *   OneTapMarketCore.detectLang(navigatorLanguage)
  *   OneTapMarketCore.appVersion(app) / changelog(app) / nextVersion(version)
@@ -178,6 +179,26 @@
       ':' +
       pad(kst.getUTCMinutes()) +
       ' KST'
+    );
+  }
+
+  /* Compact stamp for the card front, where space is tight:
+     EN "11/23 10:10 KST" · KO "11/23 10:10". The full year-day stamp
+     stays in the card tooltip and the detail modal. */
+  function formatShortStamp(iso, lang) {
+    if (!iso) return lang === 'en' ? 'not checked yet' : '아직 점검 전';
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return lang === 'en' ? 'not checked yet' : '아직 점검 전';
+    var kst = new Date(d.getTime() + 9 * 3600 * 1000);
+    return (
+      pad(kst.getUTCMonth() + 1) +
+      '/' +
+      pad(kst.getUTCDate()) +
+      ' ' +
+      pad(kst.getUTCHours()) +
+      ':' +
+      pad(kst.getUTCMinutes()) +
+      (lang === 'en' ? ' KST' : '')
     );
   }
 
@@ -692,6 +713,7 @@
     isByok: isByok,
     isFresh: isFresh,
     formatStamp: formatStamp,
+    formatShortStamp: formatShortStamp,
     timeAgo: timeAgo,
     detectLang: detectLang,
     slugify: slugify,

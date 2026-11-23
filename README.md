@@ -6,8 +6,10 @@ with a liveness check stamped on every card. It is the global-facing counterpart
 surface that outside makers can submit to.
 
 - Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
-- Version: **1.1.0** (2026-11-22) — adds per-app feedback, version history and the
-  creator update request
+- Version: **1.2.0** (2026-11-23) — the last check time is printed on every card
+  front (`Checked 11/23 10:08 KST` / `점검 11/23 10:08`), the full date and the age
+  stay in the tooltip and the detail modal; 1.1.0 added per-app feedback, version
+  history and the creator update request
 - Files: `index.html` · `privacy.html` · `styles.css` · `i18n.js` · `core.js` · `app.js`
   · `data/apps.json` · `data/apps.bundle.js` · `scripts/` · `.github/workflows/daily-verify.yml`
   · `assets/fonts/` (local PlexKR, no CDN)
@@ -17,7 +19,9 @@ surface that outside makers can submit to.
 1. **Three badges, backed by data** — `Live checked` (HTTP 200 from the checker),
    `No signup` (the URL opens the app, not a gate), `Free` or `Free · BYOK`
    (own API key optional). The one paid service in the catalogue is labelled
-   `Paid service` instead, so the badge never lies.
+   `Paid service` instead, so the badge never lies. Each card front also prints
+   the time of that check (`Checked 11/23 10:08 KST` / `점검 11/23 10:08`), so a
+   visitor can see how fresh the verdict is without opening anything.
 2. **EN / KO in one tap** — the whole interface, the card copy, the badges, the filters,
    the submission form and the page `<title>`/meta description switch. Browser language
    decides the first load; the choice is remembered in `localStorage` (`otm.lang`).
