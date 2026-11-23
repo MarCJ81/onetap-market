@@ -119,7 +119,7 @@ The published repository carries the site only. The test harness (`test.js`,
 `uitest.py`) and the preview PNGs stay in the local working folder and are listed in
 `.gitignore` — they are shipped to nobody and served from nowhere.
 
-Current state: **815 unit checks**, **298 browser checks**, 0 failures;
+Current state: **815 unit checks**, **300 browser checks**, 0 failures;
 28/28 listings answered HTTP 200 on 2026-11-23 18:58 KST.
 
 ## Feedback and updates at zero cost
