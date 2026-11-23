@@ -20,6 +20,7 @@
     noSignup: false,
     free: false,
     byok: false,
+    freeAi: false,
     sort: 'fresh',
     submitTab: 'new'
   };
@@ -170,6 +171,9 @@
     } else {
       out.push('<span class="badge badge--free" title="' + esc(t('badge.freeHint')) + '"><span class="badge__dot"></span>' + esc(t('badge.free')) + '</span>');
     }
+    if (app.freeAi) {
+      out.push('<span class="badge badge--ai" title="' + esc(t('badge.freeAiHint')) + '"><span class="badge__dot"></span>' + esc(t('badge.freeAi')) + '</span>');
+    }
     return out.join('');
   }
 
@@ -179,7 +183,7 @@
   }
 
   function cardHtml(app) {
-    var wide = app.no === 1 || app.no === 9 || app.no === 16 || app.no === 25;
+    var wide = app.no === 1 || app.no === 9 || app.no === 16 || app.no === 25 || !!app.wide;
     var cls = 'card' + (wide ? ' card--wide' : '') + (app.pricing === 'paid' ? ' card--paid' : '') +
       (app.httpStatus === 200 ? '' : ' card--down');
     var name = pick(app.name, state.lang);
@@ -216,6 +220,7 @@
       noSignup: state.noSignup,
       free: state.free,
       byok: state.byok,
+      freeAi: state.freeAi,
       sort: state.sort
     });
     $('#cardGrid').innerHTML = list.map(cardHtml).join('');
@@ -238,6 +243,8 @@
     $('#toggleFree').setAttribute('aria-pressed', String(state.free));
     $('#toggleByok').classList.toggle('is-on', state.byok);
     $('#toggleByok').setAttribute('aria-pressed', String(state.byok));
+    $('#toggleFreeAi').classList.toggle('is-on', state.freeAi);
+    $('#toggleFreeAi').setAttribute('aria-pressed', String(state.freeAi));
   }
 
   /* ── toast ──────────────────────────────────────────────────────────── */
@@ -532,6 +539,9 @@
           '<div class="fact"><span class="fact__k">' + esc(t('modal.signup')) + '</span><span class="fact__v">' + esc(app.noSignup ? t('modal.signupNo') : '—') + '</span></div>',
           '<div class="fact"><span class="fact__k">' + esc(t('modal.pricing')) + '</span><span class="fact__v">' + pricedLabel(app) + '</span></div>',
           '<div class="fact"><span class="fact__k">' + esc(t('modal.languages')) + '</span><span class="fact__v">' + esc(langs.join(' · ')) + '</span></div>',
+          (app.freeAi
+            ? '<div class="fact"><span class="fact__k">' + esc(t('modal.ai')) + '</span><span class="fact__v">' + esc(t('modal.aiFree')) + '</span></div>'
+            : ''),
           '<div class="fact"><span class="fact__k">' + esc(t('modal.creator')) + '</span><span class="fact__v">' + esc((data.meta && data.meta.creator) || 'OneTap Labs') + '</span></div>',
         '</div>',
         '<div class="detail__actions">',
@@ -808,6 +818,7 @@
     $('#toggleNoSignup').addEventListener('click', function () { state.noSignup = !state.noSignup; renderGrid(); });
     $('#toggleFree').addEventListener('click', function () { state.free = !state.free; renderGrid(); });
     $('#toggleByok').addEventListener('click', function () { state.byok = !state.byok; renderGrid(); });
+    $('#toggleFreeAi').addEventListener('click', function () { state.freeAi = !state.freeAi; renderGrid(); });
 
     var searchTimer = null;
     $('#searchInput').addEventListener('input', function (e) {
@@ -831,6 +842,7 @@
       state.noSignup = false;
       state.free = false;
       state.byok = false;
+      state.freeAi = false;
       state.sort = 'fresh';
       $('#searchInput').value = '';
       $('#sortSelect').value = 'fresh';

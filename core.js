@@ -51,6 +51,12 @@
     return app.pricing === 'free-byok';
   }
 
+  /* Free AI taste: the app finishes without a key and hands over a Pro pass
+     when the visitor connects their own OpenAI / Gemini / Claude key. */
+  function isFreeAi(app) {
+    return !!app.freeAi;
+  }
+
   function haystack(app) {
     var parts = [
       app.id,
@@ -115,6 +121,7 @@
       if (s.noSignup && !app.noSignup) return false;
       if (s.free && !isFree(app)) return false;
       if (s.byok && !isByok(app)) return false;
+      if (s.freeAi && !isFreeAi(app)) return false;
       if (!matchesSearch(app, s.search || '')) return false;
       return true;
     });
@@ -711,6 +718,7 @@
     stats: stats,
     isFree: isFree,
     isByok: isByok,
+    isFreeAi: isFreeAi,
     isFresh: isFresh,
     formatStamp: formatStamp,
     formatShortStamp: formatShortStamp,

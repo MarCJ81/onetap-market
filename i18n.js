@@ -11,7 +11,7 @@
       'A market of web apps that load without an account. Every listing shows a live HTTP check, no-signup status, a free or bring-your-own-key price and its own version history, refreshed daily.',
     'meta.ogTitle': 'OneTap Market — apps you can use in one tap',
     'meta.ogDescription':
-      '26 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.',
+      '28 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.',
 
     'brand.name': 'OneTap Market',
     'brand.sub': 'Verified no-signup web apps',
@@ -45,6 +45,8 @@
     'badge.byokHint': 'Free, with an optional own API key for Pro output',
     'badge.paid': 'Paid service',
     'badge.paidHint': 'A human service with a monthly fee, labelled so you are not surprised',
+    'badge.freeAi': 'Free AI taste',
+    'badge.freeAiHint': 'Finishes with no key in free mode; connect your own OpenAI · Gemini · Claude key for the Pro pass',
     'badge.fresh': 'Checked today',
     'badge.stale': 'Check overdue',
 
@@ -68,6 +70,7 @@
     'filter.noSignup': 'No signup',
     'filter.free': '100% free',
     'filter.byok': 'BYOK Pro',
+    'filter.freeAi': 'Free AI taste',
     'filter.search': 'Search',
     'filter.searchPlaceholder': 'Search name, category or what it does',
     'filter.sort': 'Sort',
@@ -102,6 +105,8 @@
     'modal.priceFree': 'Free, no paywall',
     'modal.priceByok': 'Free · own API key optional',
     'modal.pricePaid': 'Paid monthly service',
+    'modal.ai': 'AI',
+    'modal.aiFree': 'Free mode without a key · Pro with your own key',
     'modal.languages': 'Interface language',
     'modal.category': 'Category',
     'modal.creator': 'Listed by',
@@ -254,7 +259,7 @@
       '계정 없이 바로 열리는 웹앱만 모은 마켓입니다. 모든 카드에 실제 HTTP 응답, 가입 필요 여부, 무료 또는 내 키(BYOK) 정책과 버전 이력을 표시하고 매일 다시 확인합니다.',
     'meta.ogTitle': '원탭 마켓 — 한 번에 쓰는 검증 웹앱',
     'meta.ogDescription':
-      '26개 카드마다 실제 서버 응답, 가입 불필요, 무료·BYOK 정책과 버전 이력이 붙어 있습니다. 피드백도 카드 안에서 바로 남길 수 있습니다.',
+      '28개 카드마다 실제 서버 응답, 가입 불필요, 무료·BYOK 정책과 버전 이력이 붙어 있습니다. 피드백도 카드 안에서 바로 남길 수 있습니다.',
 
     'brand.name': '원탭 마켓',
     'brand.sub': '가입·낚시 없는 검증 웹앱',
@@ -288,6 +293,8 @@
     'badge.byokHint': '무료이며 원하면 내 API 키로 Pro 결과',
     'badge.paid': '유료 서비스',
     'badge.paidHint': '사람이 붙는 월 정액 서비스라 유료로 표시합니다',
+    'badge.freeAi': '무료 AI 맛보기',
+    'badge.freeAiHint': '키 없이 무료 모드로 끝까지 써 보고, 내 OpenAI·Gemini·Claude 키를 넣으면 Pro 결과',
     'badge.fresh': '오늘 확인',
     'badge.stale': '확인 지연',
 
@@ -311,6 +318,7 @@
     'filter.noSignup': '가입 없음',
     'filter.free': '완전 무료',
     'filter.byok': 'BYOK Pro',
+    'filter.freeAi': '무료 AI 맛보기',
     'filter.search': '검색',
     'filter.searchPlaceholder': '이름·카테고리·하는 일로 찾기',
     'filter.sort': '정렬',
@@ -345,6 +353,8 @@
     'modal.priceFree': '완전 무료, 결제 벽 없음',
     'modal.priceByok': '무료 · 내 API 키 선택',
     'modal.pricePaid': '월 정액 유료 서비스',
+    'modal.ai': 'AI',
+    'modal.aiFree': '키 없이 무료 모드 · 내 키를 넣으면 Pro',
     'modal.languages': '인터페이스 언어',
     'modal.category': '카테고리',
     'modal.creator': '등록자',

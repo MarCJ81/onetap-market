@@ -45,6 +45,8 @@
   --violet: #5b21b6;
   --violet-soft: #f5f3ff;
   --danger: #b91c1c;
+  --ai: #0e7490;
+  --ai-soft: #ecfeff;
   --radius: 18px;
   --radius-sm: 12px;
   --shadow: 0 1px 2px rgba(15, 23, 42, .04), 0 8px 24px -16px rgba(15, 23, 42, .18);
@@ -308,6 +310,7 @@ select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .badge--paid { background: var(--warn-soft); color: var(--warn); border-color: #fde68a; }
 .badge--log { background: #f1f5f9; color: var(--muted); border-color: var(--line); }
 .badge--down { background: #fee2e2; color: var(--danger); border-color: #fecaca; }
+.badge--ai { background: var(--ai-soft); color: var(--ai); border-color: #a5f3fc; }
 
 .empty[hidden] { display: none; }
 .empty {

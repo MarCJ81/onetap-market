@@ -5,16 +5,16 @@ globalThis.__ONETAP_MARKET__ = {
     "nameKo": "원탭 마켓",
     "tagline": "Verified no-signup web apps",
     "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "schemaVersion": 2,
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
-    "lastFullCheck": "2026-11-23T01:08:23.623Z",
-    "lastFullCheckOk": 26,
-    "lastFullCheckTotal": 26,
+    "lastFullCheck": "2026-11-23T09:58:48.403Z",
+    "lastFullCheckOk": 28,
+    "lastFullCheckTotal": 28,
     "verifyWindowHours": 24,
-    "lastCheckDurationMs": 1006,
+    "lastCheckDurationMs": 1037,
     "checkedBy": "scripts/verify-apps.mjs"
   },
   "categories": [
@@ -86,7 +86,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -97,7 +97,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 바이럴 배수 자동 계산 · 30초 대본 + 훅 · 벤치마킹 보드 저장. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "ai-vector-studio",
@@ -135,7 +136,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -192,7 +193,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -241,7 +242,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -260,7 +261,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 5컷 스토리보드 · .webm 실제 녹화 · 자막 .srt·.vtt. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "ai-image-studio",
@@ -298,7 +300,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v2.0.1",
       "changelog": [
         {
@@ -325,7 +327,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 배경 투명화 · 규격 5종·테마 6종 · PNG·JPG·WebP. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "ai-writer-studio",
@@ -363,7 +366,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -382,7 +385,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 블로그·스레드·상세 · AI 티 실시간 점검 · 2,200자 원고 목표. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "blog-seo-studio",
@@ -420,7 +424,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -439,7 +443,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 키워드 경쟁률·등급 · 번역체 12계열 탐지 · 5단 원고 빌더. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "commerce-seo-studio",
@@ -477,7 +482,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -496,7 +501,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 상품명 0~100점 · 경쟁강도 1초 계산 · 7단 상세 카피. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "cardnews-script-studio",
@@ -534,7 +540,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -553,7 +559,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: PNG·ZIP 내보내기 · 레퍼런스 레이아웃 복제 · 숏폼 .srt 자막. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "review-reply-studio",
@@ -591,7 +598,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -610,7 +617,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 답글 3안·말투 3종 · 일괄 답글 CSV · 허위 리뷰 소명서. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "ai-backoffice-offer",
@@ -652,7 +660,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -701,7 +709,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -750,7 +758,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -799,7 +807,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -848,7 +856,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -905,7 +913,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -916,7 +924,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 단가 프리셋 5종 · A4 2쪽 PDF · 문구 진단·교정. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "influencer-campaign-board",
@@ -954,7 +963,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -965,7 +974,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 지원자 파이프라인 · 공고문 심리 진단 · CPV·ROI 리포트. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "linkhub-studio",
@@ -1003,7 +1013,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1060,7 +1070,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1071,7 +1081,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 4분류 자동 태깅 · FAQ·고정댓글 추출 · 카피 제안. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "freeAi": true
     },
     {
       "id": "ad-law-checker",
@@ -1109,7 +1120,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1158,7 +1169,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1207,7 +1218,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1256,7 +1267,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1313,7 +1324,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1362,7 +1373,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1411,7 +1422,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T01:08:23.623Z",
+      "lastChecked": "2026-11-23T09:58:48.403Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1420,6 +1431,108 @@ globalThis.__ONETAP_MARKET__ = {
           "notes": {
             "en": "Initial build on the shelf: 6 trades · 54 line items · Verdict on your quote · JSON · CSV export — free, no paywall.",
             "ko": "첫 공개 빌드: 6업종 54품목 시세 · 받은 견적 판정 · JSON·CSV 내보내기. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "onetap-team-room",
+      "no": 27,
+      "slug": "onetap-team-room",
+      "url": "https://marcj81.github.io/onetap-team-room/",
+      "name": {
+        "en": "OneTap AI Team Room",
+        "ko": "원탭 AI 팀 회의실"
+      },
+      "category": "business-docs",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "freeAi": true,
+      "wide": true,
+      "short": {
+        "en": "Eight department leads answer one agenda in order, then an auditor re-checks their numbers and sources.",
+        "ko": "안건 하나로 8개 부서가 차례로 발언하고, 교차검수가 숫자와 출처를 다시 확인합니다."
+      },
+      "long": {
+        "en": "You bring one agenda; the room answers in role order — product, engineering, design, video, growth, sales and finance — and the last seat audits every number, source and owner the others claimed. What is left is not a chat log but department outputs, a project record and an action checklist you can export.",
+        "ko": "안건 하나를 넣으면 기획·개발·디자인·영상·그로스·영업·재무 리드가 순서대로 발언하고, 마지막 교차검수가 앞선 답변의 숫자·출처·담당을 다시 확인합니다. 남는 것은 대화록이 아니라 부서별 아웃풋, 프로젝트 기록, 액션 체크리스트입니다."
+      },
+      "features": {
+        "en": [
+          "Eight roles in speaking order",
+          "Cross-audit of numbers",
+          "Department outputs + meeting log"
+        ],
+        "ko": [
+          "8역할 순차 발언",
+          "교차검수 재확인",
+          "부서별 아웃풋·회의록"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-23",
+          "notes": {
+            "en": "Initial build on the shelf: eight roles in speaking order · cross-audit of numbers · department outputs + meeting log — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 8역할 순차 발언 · 교차검수 재확인 · 부서별 아웃풋·회의록. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "onetap-ad-audit",
+      "no": 28,
+      "slug": "onetap-ad-audit",
+      "url": "https://marcj81.github.io/onetap-ad-audit/",
+      "name": {
+        "en": "OneTap Ad Audit Studio",
+        "ko": "원탭 광고 AI 감사 스튜디오"
+      },
+      "category": "marketing-sns",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free-byok",
+      "freeAi": true,
+      "wide": true,
+      "short": {
+        "en": "Reads a Meta or Naver ads CSV, marks the campaigns losing money off, and moves their budget to the ones that return.",
+        "ko": "메타·네이버 광고 CSV를 넣으면 적자 캠페인에 OFF를 권하고 예산을 다시 배분합니다."
+      },
+      "long": {
+        "en": "Drop the file your ads manager exports — Meta, Naver, or a tab-separated sheet, CP949 included — and three agents walk the table: copy, data and budget. Losing campaigns get an off recommendation, the money left over is split by ROAS, and the expected saving, extra revenue and new blended ROAS come out as a CSV budget plan and a Markdown report.",
+        "ko": "광고 관리자에서 내려받은 CSV(메타·네이버·탭 구분, CP949 포함)를 그대로 넣으면 카피·데이터·예산 세 에이전트가 표를 하나씩 짚습니다. 적자 캠페인에는 OFF를 권하고, 남는 예산은 ROAS 비중으로 나눠 예상 절감액·추가 매출·블렌디드 ROAS를 CSV 예산안과 MD 리포트로 정리합니다."
+      },
+      "features": {
+        "en": [
+          "Meta · Naver CSV, CP949",
+          "Off recommendation · budget shift",
+          "CSV budget plan · MD report"
+        ],
+        "ko": [
+          "메타·네이버 CSV·CP949",
+          "OFF 권장·예산 재배분",
+          "CSV 예산안·MD 리포트"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-23T09:58:48.403Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-23",
+          "notes": {
+            "en": "Initial build on the shelf: Meta · Naver CSV with CP949 · off recommendation and budget shift · CSV budget plan and MD report — free, with your own key optional.",
+            "ko": "첫 공개 빌드: 메타·네이버 CSV·CP949 · OFF 권장·예산 재배분 · CSV 예산안·MD 리포트. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
       ]

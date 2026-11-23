@@ -6,26 +6,30 @@ with a liveness check stamped on every card. It is the global-facing counterpart
 surface that outside makers can submit to.
 
 - Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
-- Version: **1.2.0** (2026-11-23) — the last check time is printed on every card
-  front (`Checked 11/23 10:08 KST` / `점검 11/23 10:08`), the full date and the age
-  stay in the tooltip and the detail modal; 1.1.0 added per-app feedback, version
-  history and the creator update request
+- Version: **1.3.0** (2026-11-23) — 27호기 `onetap-team-room` and 28호기
+  `onetap-ad-audit` join the shelf (28 listings), and every app whose free pass
+  runs without a key carries a `Free AI taste` badge (13 of them). The last check
+  time is printed on every card front (`Checked 11/23 18:58 KST` / `점검 11/23 18:58`),
+  the full date and the age stay in the tooltip and the detail modal; 1.1.0 added
+  per-app feedback, version history and the creator update request
 - Files: `index.html` · `privacy.html` · `styles.css` · `i18n.js` · `core.js` · `app.js`
   · `data/apps.json` · `data/apps.bundle.js` · `scripts/` · `.github/workflows/daily-verify.yml`
   · `assets/fonts/` (local PlexKR, no CDN)
 
 ## What makes it different from a link list
 
-1. **Three badges, backed by data** — `Live checked` (HTTP 200 from the checker),
+1. **Three badges plus one, backed by data** — `Live checked` (HTTP 200 from the checker),
    `No signup` (the URL opens the app, not a gate), `Free` or `Free · BYOK`
-   (own API key optional). The one paid service in the catalogue is labelled
+   (own API key optional), and `Free AI taste` on the 13 apps that finish in free
+   mode without a key and take the visitor's own OpenAI · Gemini · Claude key for
+   the Pro pass. The one paid service in the catalogue is labelled
    `Paid service` instead, so the badge never lies. Each card front also prints
    the time of that check (`Checked 11/23 10:08 KST` / `점검 11/23 10:08`), so a
    visitor can see how fresh the verdict is without opening anything.
 2. **EN / KO in one tap** — the whole interface, the card copy, the badges, the filters,
    the submission form and the page `<title>`/meta description switch. Browser language
    decides the first load; the choice is remembered in `localStorage` (`otm.lang`).
-3. **26 seeded listings** — 23 Korean + 3 global English (`ics-viewer-online`,
+3. **28 seeded listings** — 25 Korean + 3 global English (`ics-viewer-online`,
    `invoice-receipt-pl-generator`, `llm-cost-llms-txt`). Korean apps carry an English
    summary too, so an English visitor is never shown a blank card.
 4. **A submission pipeline that works at zero cost** — the form builds a pre-filled
@@ -41,7 +45,7 @@ surface that outside makers can submit to.
 
 | Path | What it is |
 | --- | --- |
-| `data/apps.json` | Source of truth: meta, categories, 26 listings with `httpStatus` + `lastChecked` |
+| `data/apps.json` | Source of truth: meta, categories, 28 listings with `httpStatus` + `lastChecked` |
 | `data/apps.bundle.js` | Generated from the JSON so the page also works opened from disk (`file://`) |
 | `core.js` | Pure logic (UMD): filter, search, sort, stats, stamps, validation, issue URL |
 | `i18n.js` | EN/KO strings, identical key sets |
@@ -88,6 +92,11 @@ surface that outside makers can submit to.
   developers — the empty shelf shows a submission CTA instead of a dead end).
 - `pricing` is `free`, `free-byok` (Pro output with your own key) or `paid`
   (a human service; add `priceNote` and the card turns amber).
+- `freeAi: true` paints the `Free AI taste` badge and feeds the filter toggle: the
+  app finishes in free mode with no key and takes the visitor's own OpenAI · Gemini ·
+  Claude key for the Pro pass. Only `free-byok` listings set it (13 of 28).
+- `wide: true` makes the card span two grid columns (used by the two newest, 27 and 28,
+  so the last row of the 4-column grid closes).
 - `httpStatus` and `lastChecked` are written by the checker — do not hand-edit them.
 
 ## Run it
@@ -110,8 +119,8 @@ The published repository carries the site only. The test harness (`test.js`,
 `uitest.py`) and the preview PNGs stay in the local working folder and are listed in
 `.gitignore` — they are shipped to nobody and served from nowhere.
 
-Current state: **746 unit checks**, **278 browser checks**, 0 failures;
-26/26 listings answered HTTP 200 on 2026-11-22 11:16 KST.
+Current state: **815 unit checks**, **298 browser checks**, 0 failures;
+28/28 listings answered HTTP 200 on 2026-11-23 18:58 KST.
 
 ## Feedback and updates at zero cost
 

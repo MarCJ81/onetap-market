@@ -103,7 +103,7 @@ async function main() {
   let okCount = 0;
   const lines = [];
 
-  // Small concurrency so 26 requests finish quickly but politely.
+  // Small concurrency so every request finishes quickly but politely.
   const queue = [...targets];
   const results = new Map();
   const workers = Array.from({ length: 5 }, async () => {

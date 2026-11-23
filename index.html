@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="OneTap Market">
 <meta property="og:title" content="OneTap Market — apps you can use in one tap">
-<meta property="og:description" content="26 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.">
+<meta property="og:description" content="28 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.">
 <meta property="og:url" content="https://marcj81.github.io/onetap-market/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ko_KR">
@@ -33,7 +33,7 @@
     {
       "@type": "ItemList",
       "name": "OneTap Market listings",
-      "numberOfItems": 26,
+      "numberOfItems": 28,
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Shortform Radar", "url": "https://marcj81.github.io/shortform-radar/" },
         { "@type": "ListItem", "position": 2, "name": "OneTap Vector Studio", "url": "https://marcj81.github.io/ai-vector-studio/" },
@@ -60,7 +60,9 @@
         { "@type": "ListItem", "position": 23, "name": "Invoice, Receipt & P&L Generator", "url": "https://marcj81.github.io/invoice-receipt-pl-generator/" },
         { "@type": "ListItem", "position": 24, "name": "LLM Cost Calculator & llms.txt Generator", "url": "https://marcj81.github.io/llm-cost-llms-txt/" },
         { "@type": "ListItem", "position": 25, "name": "Proof of Work Report", "url": "https://marcj81.github.io/proof-of-work-report/" },
-        { "@type": "ListItem", "position": 26, "name": "Price Radar KR", "url": "https://marcj81.github.io/price-radar-kr/" }
+        { "@type": "ListItem", "position": 26, "name": "Price Radar KR", "url": "https://marcj81.github.io/price-radar-kr/" },
+        { "@type": "ListItem", "position": 27, "name": "OneTap AI Team Room", "url": "https://marcj81.github.io/onetap-team-room/" },
+        { "@type": "ListItem", "position": 28, "name": "OneTap Ad Audit Studio", "url": "https://marcj81.github.io/onetap-ad-audit/" }
       ]
     }
   ]
@@ -98,7 +100,7 @@
   <!-- ── hero ─────────────────────────────────────────────────────────── -->
   <section class="hero">
     <div class="wrap hero__inner">
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Open market · listings</span> <b id="heroCount">26</b></p>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Open market · listings</span> <b id="heroCount">28</b></p>
       <h1 class="hero__title">
         <span data-i18n="hero.title">Open it. Use it. No account, no upsell wall.</span>
       </h1>
@@ -119,17 +121,17 @@
   <section class="dashboard wrap" aria-label="Market dashboard" data-i18n-aria="app.ariaStats">
     <div class="stat">
       <span class="stat__label" data-i18n="stats.apps">Listed apps</span>
-      <strong class="stat__value" id="statApps">26</strong>
+      <strong class="stat__value" id="statApps">28</strong>
       <span class="stat__note" data-i18n="stats.appsNote">Korean and global</span>
     </div>
     <div class="stat stat--accent">
       <span class="stat__label" data-i18n="stats.pass">Live pass rate</span>
       <strong class="stat__value" id="statPass">100%</strong>
-      <span class="stat__note"><span id="statPassNote">26/26</span> · <span data-i18n="stats.passNote">HTTP 200 right now</span></span>
+      <span class="stat__note"><span id="statPassNote">28/28</span> · <span data-i18n="stats.passNote">HTTP 200 right now</span></span>
     </div>
     <div class="stat">
       <span class="stat__label" data-i18n="stats.noSignup">No-signup apps</span>
-      <strong class="stat__value" id="statNoSignup">26</strong>
+      <strong class="stat__value" id="statNoSignup">28</strong>
       <span class="stat__note" data-i18n="stats.noSignupNote">Open and use</span>
     </div>
     <div class="stat">
@@ -180,10 +182,11 @@
           <button type="button" class="toggle" id="toggleNoSignup" aria-pressed="false"><span class="toggle__dot" aria-hidden="true"></span><span data-i18n="filter.noSignup">No signup</span></button>
           <button type="button" class="toggle" id="toggleFree" aria-pressed="false"><span class="toggle__dot" aria-hidden="true"></span><span data-i18n="filter.free">100% free</span></button>
           <button type="button" class="toggle" id="toggleByok" aria-pressed="false"><span class="toggle__dot" aria-hidden="true"></span><span data-i18n="filter.byok">BYOK Pro</span></button>
+          <button type="button" class="toggle" id="toggleFreeAi" aria-pressed="false"><span class="toggle__dot" aria-hidden="true"></span><span data-i18n="filter.freeAi">Free AI taste</span></button>
           <button type="button" class="linkbtn" id="resetFilters" data-i18n="filter.reset">Reset</button>
         </div>
       </div>
-      <p class="result" aria-live="polite"><b id="resultCount">26</b> <span data-i18n="app.showing">Showing</span> <span id="resultTotal">26</span></p>
+      <p class="result" aria-live="polite"><b id="resultCount">28</b> <span data-i18n="app.showing">Showing</span> <span id="resultTotal">28</span></p>
     </div>
   </section>
 
