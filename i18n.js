@@ -47,6 +47,7 @@
     'badge.paidHint': 'A human service with a monthly fee, labelled so you are not surprised',
     'badge.freeAi': 'Free AI taste',
     'badge.freeAiHint': 'Finishes with no key in free mode; connect your own OpenAI · Gemini · Claude key for the Pro pass',
+    'badge.freeAiHintPlain': 'Finishes with no key in free mode; when the free pass runs out, continue in your own ChatGPT · Claude · Gemini',
     'badge.fresh': 'Checked today',
     'badge.stale': 'Check overdue',
 
@@ -107,6 +108,7 @@
     'modal.pricePaid': 'Paid monthly service',
     'modal.ai': 'AI',
     'modal.aiFree': 'Free mode without a key · Pro with your own key',
+    'modal.aiFreePlain': 'Free mode without a key · continue in your own AI when the free pass runs out',
     'modal.languages': 'Interface language',
     'modal.category': 'Category',
     'modal.creator': 'Listed by',
@@ -295,6 +297,7 @@
     'badge.paidHint': '사람이 붙는 월 정액 서비스라 유료로 표시합니다',
     'badge.freeAi': '무료 AI 맛보기',
     'badge.freeAiHint': '키 없이 무료 모드로 끝까지 써 보고, 내 OpenAI·Gemini·Claude 키를 넣으면 Pro 결과',
+    'badge.freeAiHintPlain': '키 없이 무료 모드로 끝까지 써 보고, 무료 횟수가 끝나면 내 ChatGPT·Claude·Gemini에서 이어서',
     'badge.fresh': '오늘 확인',
     'badge.stale': '확인 지연',
 
@@ -355,6 +358,7 @@
     'modal.pricePaid': '월 정액 유료 서비스',
     'modal.ai': 'AI',
     'modal.aiFree': '키 없이 무료 모드 · 내 키를 넣으면 Pro',
+    'modal.aiFreePlain': '키 없이 무료 모드 · 무료 횟수가 끝나면 내 AI에서 이어서',
     'modal.languages': '인터페이스 언어',
     'modal.category': '카테고리',
     'modal.creator': '등록자',

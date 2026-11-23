@@ -172,7 +172,10 @@
       out.push('<span class="badge badge--free" title="' + esc(t('badge.freeHint')) + '"><span class="badge__dot"></span>' + esc(t('badge.free')) + '</span>');
     }
     if (app.freeAi) {
-      out.push('<span class="badge badge--ai" title="' + esc(t('badge.freeAiHint')) + '"><span class="badge__dot"></span>' + esc(t('badge.freeAi')) + '</span>');
+      /* The badge's tooltip follows the price label: a free-byok studio takes a key
+         for the Pro pass, a plain free app hands the job to the visitor's own AI. */
+      var aiHint = app.pricing === 'free-byok' ? t('badge.freeAiHint') : t('badge.freeAiHintPlain');
+      out.push('<span class="badge badge--ai" title="' + esc(aiHint) + '"><span class="badge__dot"></span>' + esc(t('badge.freeAi')) + '</span>');
     }
     return out.join('');
   }
@@ -543,7 +546,7 @@
           /* The AI row closes the table at full width, so the two-column grid
              never leaves an empty cell on an odd number of facts. */
           (app.freeAi
-            ? '<div class="fact fact--wide"><span class="fact__k">' + esc(t('modal.ai')) + '</span><span class="fact__v">' + esc(t('modal.aiFree')) + '</span></div>'
+            ? '<div class="fact fact--wide"><span class="fact__k">' + esc(t('modal.ai')) + '</span><span class="fact__v">' + esc(t(app.pricing === 'free-byok' ? 'modal.aiFree' : 'modal.aiFreePlain')) + '</span></div>'
             : ''),
         '</div>',
         '<div class="detail__actions">',
