@@ -6,10 +6,10 @@ with a liveness check stamped on every card. It is the global-facing counterpart
 surface that outside makers can submit to.
 
 - Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
-- Version: **1.4.0** (2026-11-23) — 29호기 `onetap-clip-factory` (OneTap Clip
-  Factory / 원탭 클립 팩토리) joins the shelf, so the list is **29 listings**.
+- Version: **1.5.0** (2026-11-24) — 30호기 `onetap-hwpx-converter` (OneTap HWPX
+  Converter / 원탭 HWPX 변환기) joins the shelf, so the list is **30 listings**.
   The `Free AI taste` badge still follows the code instead of a guess: every app
-  that really calls the free AI server carries it (16 of 29 — the 14 BYOK studios
+  that really calls the free AI server carries it (16 of 30 — the 14 BYOK studios
   plus `ad-law-checker` and `price-radar-kr`, which call the same server while
   keeping the plain `free` price label). Also on the shelf: 27호기
   `onetap-team-room` and 28호기 `onetap-ad-audit`, the last check
@@ -34,7 +34,7 @@ surface that outside makers can submit to.
 2. **EN / KO in one tap** — the whole interface, the card copy, the badges, the filters,
    the submission form and the page `<title>`/meta description switch. Browser language
    decides the first load; the choice is remembered in `localStorage` (`otm.lang`).
-3. **29 seeded listings** — 26 Korean + 3 global English (`ics-viewer-online`,
+3. **30 seeded listings** — 27 Korean + 3 global English (`ics-viewer-online`,
    `invoice-receipt-pl-generator`, `llm-cost-llms-txt`). Korean apps carry an English
    summary too, so an English visitor is never shown a blank card.
 4. **A submission pipeline that works at zero cost** — the form builds a pre-filled
@@ -50,7 +50,7 @@ surface that outside makers can submit to.
 
 | Path | What it is |
 | --- | --- |
-| `data/apps.json` | Source of truth: meta, categories, 28 listings with `httpStatus` + `lastChecked` |
+| `data/apps.json` | Source of truth: meta, categories, 30 listings with `httpStatus` + `lastChecked` |
 | `data/apps.bundle.js` | Generated from the JSON so the page also works opened from disk (`file://`) |
 | `core.js` | Pure logic (UMD): filter, search, sort, stats, stamps, validation, issue URL |
 | `i18n.js` | EN/KO strings, identical key sets |
@@ -101,11 +101,12 @@ surface that outside makers can submit to.
   app finishes in free mode with no key and takes the visitor's own OpenAI · Gemini ·
   Claude key for the Pro pass. Set it only after checking the app's own code calls
   `https://free-ai-taste.onetap-ai.workers.dev` (or `generateFree()`); it is not tied
-  to the `free-byok` price label — 16 of 29 carry it, 14 `free-byok` studios plus
+  to the `free-byok` price label — 16 of 30 carry it, 14 `free-byok` studios plus
   `ad-law-checker` and `price-radar-kr`.
 - `wide: true` makes the card span two grid columns. With the three anchors (`no` 1, 9
-  and 16) plus the newest four (`no` 26 to 29) every row of the 4-column grid fills
-  exactly, so the last row closes without a gap.
+  and 16) plus the newest four (`no` 27 to 30) every row of the 4-column grid fills
+  exactly, so the last row closes without a gap: rows 8–9 are
+  `26 · 27 · 28` (2+1+1 columns) and `29 · 30` (2+2).
 - `httpStatus` and `lastChecked` are written by the checker — do not hand-edit them.
 
 ## Run it
@@ -128,8 +129,8 @@ The published repository carries the site only. The test harness (`test.js`,
 `uitest.py`) and the preview PNGs stay in the local working folder and are listed in
 `.gitignore` — they are shipped to nobody and served from nowhere.
 
-Current state: **830 unit checks**, **306 browser checks** (live site), 0 failures;
-29/29 listings answered HTTP 200 on 2026-11-24 00:09 KST.
+Current state: **840 unit checks**, **304 browser checks**, 0 failures; 30/30 listings
+answered HTTP 200 on 2026-11-24 19:47 KST (the daily checker re-stamps every card).
 
 ## Feedback and updates at zero cost
 

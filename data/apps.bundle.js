@@ -5,16 +5,16 @@ globalThis.__ONETAP_MARKET__ = {
     "nameKo": "원탭 마켓",
     "tagline": "Verified no-signup web apps",
     "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "schemaVersion": 2,
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
-    "lastFullCheck": "2026-11-23T19:11:45.112Z",
-    "lastFullCheckOk": 29,
-    "lastFullCheckTotal": 29,
+    "lastFullCheck": "2026-11-24T10:47:36.872Z",
+    "lastFullCheckOk": 30,
+    "lastFullCheckTotal": 30,
     "verifyWindowHours": 24,
-    "lastCheckDurationMs": 1130,
+    "lastCheckDurationMs": 1011,
     "checkedBy": "scripts/verify-apps.mjs"
   },
   "categories": [
@@ -86,7 +86,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -136,7 +136,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -193,7 +193,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -242,7 +242,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -300,7 +300,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v2.0.1",
       "changelog": [
         {
@@ -366,7 +366,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -424,7 +424,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -482,7 +482,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -540,7 +540,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -598,7 +598,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -660,7 +660,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -709,7 +709,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -758,7 +758,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -807,7 +807,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -856,7 +856,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -913,7 +913,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -963,7 +963,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1013,7 +1013,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1070,7 +1070,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1120,7 +1120,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1170,7 +1170,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1219,7 +1219,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1268,7 +1268,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1325,7 +1325,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1374,7 +1374,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1423,7 +1423,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1475,7 +1475,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1504,7 +1504,6 @@ globalThis.__ONETAP_MARKET__ = {
       "noSignup": true,
       "pricing": "free-byok",
       "freeAi": true,
-      "wide": true,
       "short": {
         "en": "Reads a Meta or Naver ads CSV, marks the campaigns losing money off, and moves their budget to the ones that return.",
         "ko": "메타·네이버 광고 CSV를 넣으면 적자 캠페인에 OFF를 권하고 예산을 다시 배분합니다."
@@ -1526,7 +1525,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1577,7 +1576,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-23T19:11:45.112Z",
+      "lastChecked": "2026-11-24T10:47:36.872Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1586,6 +1585,56 @@ globalThis.__ONETAP_MARKET__ = {
           "notes": {
             "en": "First public build: dead-air removal, scene-cut detect, 9:16 subject tracking, four caption styles, real H.264 MP4 and ZIP — free, with your own key optional.",
             "ko": "첫 공개 빌드: 무음 제거·장면 컷 감지·9:16 피사체 추적·자막 4종·실제 H.264 MP4와 ZIP. 무료, 내 API 키는 선택으로 그대로 씁니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "onetap-hwpx-converter",
+      "no": 30,
+      "slug": "onetap-hwpx-converter",
+      "url": "https://marcj81.github.io/onetap-hwpx-converter/",
+      "name": {
+        "en": "OneTap HWPX Converter",
+        "ko": "원탭 HWPX 변환기"
+      },
+      "category": "business-docs",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "wide": true,
+      "short": {
+        "en": "Turns HWPX files from Hangul 2014 and later into HWP 5.0 — character shapes, tables and pictures kept, several files at once.",
+        "ko": "한글 2014 이후의 HWPX 문서를 HWP 5.0으로. 글자 모양·표·그림을 살려 여러 개를 한 번에 바꿉니다."
+      },
+      "long": {
+        "en": "Drop one .hwpx or a batch: the converter first reports what it found — paragraphs, tables, pictures and anything it cannot carry over — then hands back each .hwp or a ZIP. Character shapes, paragraph alignment, merged cells and inline pictures are carried over, the finished .hwp can be read back as text to check what landed, and the document never leaves the tab.",
+        "ko": "HWPX 하나 또는 여러 개를 넣으면 문단·표·그림과 옮기지 못하는 요소를 먼저 진단한 뒤, 만든 .hwp를 개별로 또는 ZIP으로 줍니다. 글자 모양·문단 정렬·병합 셀·그림을 옮기고, 만들어진 .hwp에서 글자를 다시 뽑아 확인할 수 있습니다. 문서는 탭을 벗어나지 않습니다."
+      },
+      "features": {
+        "en": [
+          "HWPX → HWP 5.0",
+          "Formatting, tables, pictures kept",
+          "Batch convert + ZIP"
+        ],
+        "ko": [
+          "HWPX → HWP 5.0 변환",
+          "서식·표·그림 보존",
+          "여러 개 변환·ZIP"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-24T10:47:36.872Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-24",
+          "notes": {
+            "en": "First public build: batch HWPX → HWP 5.0 conversion, formatting, tables and pictures carried over, document diagnosis and text read-back — free, no paywall, nothing uploaded.",
+            "ko": "첫 공개 빌드: HWPX → HWP 5.0 일괄 변환, 서식·표·그림 보존, 문서 진단과 글자 되읽기. 완전 무료, 업로드 없음."
           }
         }
       ]
