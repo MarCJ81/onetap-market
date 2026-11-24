@@ -1505,7 +1505,7 @@ globalThis.__ONETAP_MARKET__ = {
       "pricing": "free-byok",
       "freeAi": true,
       "short": {
-        "en": "Reads a Meta or Naver ads CSV, marks the campaigns losing money off, and moves their budget to the ones that return.",
+        "en": "Reads a Meta or Naver ads CSV, flags losing campaigns and re-splits the budget.",
         "ko": "메타·네이버 광고 CSV를 넣으면 적자 캠페인에 OFF를 권하고 예산을 다시 배분합니다."
       },
       "long": {
