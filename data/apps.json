@@ -9,11 +9,11 @@
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
-    "lastFullCheck": "2026-11-25T00:00:22.656Z",
+    "lastFullCheck": "2026-11-25T19:14:34.915Z",
     "lastFullCheckOk": 31,
     "lastFullCheckTotal": 31,
     "verifyWindowHours": 24,
-    "lastCheckDurationMs": 1253,
+    "lastCheckDurationMs": 1279,
     "checkedBy": "scripts/verify-apps.mjs"
   },
   "categories": [
@@ -85,7 +85,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -135,7 +135,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -192,7 +192,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -241,7 +241,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -299,7 +299,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v2.0.1",
       "changelog": [
         {
@@ -365,7 +365,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -423,7 +423,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -481,7 +481,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -539,7 +539,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -597,7 +597,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -659,7 +659,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -708,7 +708,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -757,7 +757,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -806,7 +806,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -855,7 +855,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -912,7 +912,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -962,7 +962,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1012,7 +1012,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1069,7 +1069,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1119,7 +1119,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1169,7 +1169,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1218,7 +1218,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1267,7 +1267,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1324,7 +1324,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1374,7 +1374,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1423,7 +1423,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1475,7 +1475,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1525,7 +1525,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1577,7 +1577,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1627,7 +1627,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1678,7 +1678,7 @@
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "lastChecked": "2026-11-25T19:14:34.915Z",
       "version": "v1.0.0",
       "changelog": [
         {
