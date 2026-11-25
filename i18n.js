@@ -11,7 +11,7 @@
       'A market of web apps that load without an account. Every listing shows a live HTTP check, no-signup status, a free or bring-your-own-key price and its own version history, refreshed daily.',
     'meta.ogTitle': 'OneTap Market — apps you can use in one tap',
     'meta.ogDescription':
-      '30 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.',
+      '31 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.',
 
     'brand.name': 'OneTap Market',
     'brand.sub': 'Verified no-signup web apps',
@@ -261,7 +261,7 @@
       '계정 없이 바로 열리는 웹앱만 모은 마켓입니다. 모든 카드에 실제 HTTP 응답, 가입 필요 여부, 무료 또는 내 키(BYOK) 정책과 버전 이력을 표시하고 매일 다시 확인합니다.',
     'meta.ogTitle': '원탭 마켓 — 한 번에 쓰는 검증 웹앱',
     'meta.ogDescription':
-      '30개 카드마다 실제 서버 응답, 가입 불필요, 무료·BYOK 정책과 버전 이력이 붙어 있습니다. 피드백도 카드 안에서 바로 남길 수 있습니다.',
+      '31개 카드마다 실제 서버 응답, 가입 불필요, 무료·BYOK 정책과 버전 이력이 붙어 있습니다. 피드백도 카드 안에서 바로 남길 수 있습니다.',
 
     'brand.name': '원탭 마켓',
     'brand.sub': '가입·낚시 없는 검증 웹앱',

@@ -5,16 +5,16 @@ globalThis.__ONETAP_MARKET__ = {
     "nameKo": "원탭 마켓",
     "tagline": "Verified no-signup web apps",
     "taglineKo": "가입·낚시 없는 검증 웹앱 마켓",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "schemaVersion": 2,
     "repo": "MarCJ81/onetap-market",
     "creator": "OneTap Labs",
     "handle": "MarCJ81",
-    "lastFullCheck": "2026-11-24T19:11:48.441Z",
-    "lastFullCheckOk": 30,
-    "lastFullCheckTotal": 30,
+    "lastFullCheck": "2026-11-25T00:00:22.656Z",
+    "lastFullCheckOk": 31,
+    "lastFullCheckTotal": 31,
     "verifyWindowHours": 24,
-    "lastCheckDurationMs": 1236,
+    "lastCheckDurationMs": 1253,
     "checkedBy": "scripts/verify-apps.mjs"
   },
   "categories": [
@@ -86,7 +86,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -136,7 +136,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -193,7 +193,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -242,7 +242,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -300,7 +300,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v2.0.1",
       "changelog": [
         {
@@ -366,7 +366,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -424,7 +424,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -482,7 +482,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -540,7 +540,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -598,7 +598,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v2.0.0",
       "changelog": [
         {
@@ -660,7 +660,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -709,7 +709,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -758,7 +758,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -807,7 +807,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -856,7 +856,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -913,7 +913,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -963,7 +963,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1013,7 +1013,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1070,7 +1070,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1120,7 +1120,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1170,7 +1170,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1219,7 +1219,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1268,7 +1268,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.1",
       "changelog": [
         {
@@ -1325,7 +1325,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1336,7 +1336,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 요청당~연간 비용 · 예산 역산 · llms.txt 생성. 완전 무료, 결제 벽 없음으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "wide": true
     },
     {
       "id": "proof-of-work-report",
@@ -1374,7 +1375,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1423,7 +1424,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1475,7 +1476,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1525,7 +1526,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1536,7 +1537,8 @@ globalThis.__ONETAP_MARKET__ = {
             "ko": "첫 공개 빌드: 메타·네이버 CSV·CP949 · OFF 권장·예산 재배분 · CSV 예산안·MD 리포트. 무료, 내 API 키는 선택으로 그대로 씁니다."
           }
         }
-      ]
+      ],
+      "wide": true
     },
     {
       "id": "onetap-clip-factory",
@@ -1576,7 +1578,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1626,7 +1628,7 @@ globalThis.__ONETAP_MARKET__ = {
         ]
       },
       "httpStatus": 200,
-      "lastChecked": "2026-11-24T19:11:48.441Z",
+      "lastChecked": "2026-11-25T00:00:22.656Z",
       "version": "v1.0.0",
       "changelog": [
         {
@@ -1635,6 +1637,57 @@ globalThis.__ONETAP_MARKET__ = {
           "notes": {
             "en": "First public build: batch HWPX → HWP 5.0 conversion, formatting, tables and pictures carried over, document diagnosis and text read-back — free, no paywall, nothing uploaded.",
             "ko": "첫 공개 빌드: HWPX → HWP 5.0 일괄 변환, 서식·표·그림 보존, 문서 진단과 글자 되읽기. 완전 무료, 업로드 없음."
+          }
+        }
+      ]
+    },
+    {
+      "id": "onetap-webapp-shield",
+      "no": 31,
+      "slug": "onetap-webapp-shield",
+      "url": "https://marcj81.github.io/onetap-webapp-shield/",
+      "name": {
+        "en": "OneTap WebApp Shield",
+        "ko": "원탭 웹앱 실드"
+      },
+      "category": "dev-security",
+      "languages": [
+        "ko"
+      ],
+      "noSignup": true,
+      "pricing": "free",
+      "freeAi": true,
+      "wide": true,
+      "short": {
+        "en": "Scans an AI-built web app for leaked keys, missing row-level security, XSS and open CORS across 86 rules, then writes the headers, CSP and CI rules that close them.",
+        "ko": "AI로 만든 웹앱의 시크릿 유출·RLS 누락·XSS·CORS 구멍을 86개 규칙으로 찾고, 막는 보안 헤더·CSP·CI 규칙까지 만들어 줍니다."
+      },
+      "long": {
+        "en": "Paste code, drop a folder, point at a public GitHub repo or a live URL: the shield reports 38 kinds of leaked secret, 37 code weaknesses and 11 file-level misconfigurations with a 100-point score, then generates security headers for Cloudflare, Netlify, Vercel, Next.js, Nginx and Express, a CSP builder for the services you actually use, and a seven-file guardrail kit with a GitHub Actions workflow. Dependency CVEs are looked up live on OSV.dev, and anything the browser could not read is shown as unknown rather than green.",
+        "ko": "코드를 붙여넣거나 폴더·GitHub 공개 저장소·배포 URL을 넣으면 시크릿 38종, 코드 취약점 37종, 파일 설정 11종을 찾아 100점 점수로 보여 줍니다. 이어서 Cloudflare·Netlify·Vercel·Next.js·Nginx·Express용 보안 헤더, 쓰는 서비스만 골라 만드는 CSP, GitHub Actions가 든 7파일 가드레일 키트를 만들어 줍니다. 의존성 CVE는 OSV.dev에서 실제 조회하고, 브라우저가 읽지 못한 항목은 초록 체크 대신 미확인으로 남깁니다."
+      },
+      "features": {
+        "en": [
+          "86 secret, SAST and config rules",
+          "Security headers, CSP and CI kit",
+          "Live dependency CVE lookup"
+        ],
+        "ko": [
+          "시크릿·SAST·설정 86개 규칙",
+          "보안 헤더·CSP·CI 키트",
+          "의존성 CVE 실시간 조회"
+        ]
+      },
+      "httpStatus": 200,
+      "lastChecked": "2026-11-25T00:00:22.656Z",
+      "version": "v1.0.0",
+      "changelog": [
+        {
+          "version": "v1.0.0",
+          "date": "2026-11-25",
+          "notes": {
+            "en": "First public build: local scan of secrets, SAST and file config, hosting-ready security headers, CSP builder, guardrail kit, live OSV.dev CVE lookup and Markdown/JSON reports — free, no signup, nothing uploaded.",
+            "ko": "첫 공개 빌드: 시크릿·SAST·파일 설정 로컬 스캔, 호스팅별 보안 헤더, CSP 빌더, 가드레일 키트, OSV.dev 실시간 CVE 조회와 Markdown·JSON 리포트. 무료, 가입 불필요, 업로드 없음."
           }
         }
       ]
