@@ -6,8 +6,11 @@ with a liveness check stamped on every card. It is the global-facing counterpart
 surface that outside makers can submit to.
 
 - Live target: `https://marcj81.github.io/onetap-market/` (repository name `onetap-market`)
-- Version: **1.6.0** (2026-11-25) — 31호기 `onetap-webapp-shield` (OneTap WebApp
-  Shield / 원탭 웹앱 실드) joins the shelf, so the list is **31 listings**.
+- Version: **1.7.0** (2026-11-27) — region split: the English shelf shows the 22
+  global apps and keeps the nine Korea-only tools behind a `🇰🇷 Korea-specific tools (9)`
+  toggle (Korean mode still shows all 31). The listing set itself is unchanged from
+  **1.6.0** (2026-11-25), when 31호기 `onetap-webapp-shield` (OneTap WebApp
+  Shield / 원탭 웹앱 실드) joined the shelf, so the list is **31 listings**.
   The `Free AI taste` badge still follows the code instead of a guess: every app
   that really calls the free AI server carries it (17 of 31 — the 14 BYOK studios
   plus `ad-law-checker`, `price-radar-kr` and `onetap-webapp-shield`, which call the
@@ -34,7 +37,15 @@ surface that outside makers can submit to.
    visitor can see how fresh the verdict is without opening anything.
 2. **EN / KO in one tap** — the whole interface, the card copy, the badges, the filters,
    the submission form and the page `<title>`/meta description switch. Browser language
-   decides the first load; the choice is remembered in `localStorage` (`otm.lang`).
+   decides the first load; `?lang=en|ko` in the URL wins over it, and the choice is
+   remembered in `localStorage` (`otm.lang`).
+   **Region split:** Korean mode keeps all 31 listings. English mode shows the 22
+   global apps and folds the nine Korea-only ones (`yearend-tax-reverse`,
+   `severance-leave-calculator`, `payslip-calculator`, `tax-margin-calculator`,
+   `onetap-hwpx-converter`, `ad-law-checker`, `price-radar-kr`, `blog-seo-studio`,
+   `commerce-seo-studio`) behind the `🇰🇷 Korea-specific tools (9)` toggle, so the
+   count, the pass rate, the category chips and the card numbers all read 22 until
+   a visitor asks for them.
 3. **31 seeded listings** — 28 Korean + 3 global English (`ics-viewer-online`,
    `invoice-receipt-pl-generator`, `llm-cost-llms-txt`). Korean apps carry an English
    summary too, so an English visitor is never shown a blank card.

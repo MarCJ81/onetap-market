@@ -12,6 +12,7 @@
  *   OneTapMarketCore.formatShortStamp(iso, lang)
  *   OneTapMarketCore.timeAgo(iso, lang, now)
  *   OneTapMarketCore.detectLang(navigatorLanguage)
+ *   OneTapMarketCore.isKoreaOnly(app) / regionApps(apps, lang, showKorea)
  *   OneTapMarketCore.appVersion(app) / changelog(app) / nextVersion(version)
  *   OneTapMarketCore.feedbackIssueUrl(app, feedback, repo) / feedbackText(...)
  *   OneTapMarketCore.feedbackApiUrl(repo) / parseFeedbackIssues(payload, app, repo)
@@ -41,6 +42,40 @@
     if (!lang || lang === 'all') return true;
     var langs = app.languages || ['ko'];
     return langs.indexOf(lang) !== -1;
+  }
+
+  /* ── region ─────────────────────────────────────────────────────────────
+     Nine apps only make sense in Korea: year-end tax, severance and leave,
+     payslips, VAT and income tax, the HWPX converter, the Korean ad-law
+     checker, the Korean price radar and the two Korean SEO studios. A visitor
+     arriving in English sees the 22 global apps first and can pull the Korean
+     nine back in with one toggle; Korean mode always keeps the whole shelf. */
+  var KOREA_ONLY = [
+    'yearend-tax-reverse',
+    'severance-leave-calculator',
+    'payslip-calculator',
+    'tax-margin-calculator',
+    'onetap-hwpx-converter',
+    'ad-law-checker',
+    'price-radar-kr',
+    'blog-seo-studio',
+    'commerce-seo-studio'
+  ];
+
+  function isKoreaOnly(app) {
+    if (!app) return false;
+    var id = app.id || '';
+    var slug = app.slug || '';
+    return KOREA_ONLY.indexOf(id) !== -1 || KOREA_ONLY.indexOf(slug) !== -1;
+  }
+
+  function regionApps(apps, lang, showKorea) {
+    if (lang !== 'en' || showKorea) return apps.slice();
+    return apps.filter(function (a) { return !isKoreaOnly(a); });
+  }
+
+  function koreaApps(apps) {
+    return apps.filter(isKoreaOnly);
   }
 
   function isFree(app) {
@@ -712,6 +747,10 @@
   var Core = {
     FRESH_HOURS: FRESH_HOURS,
     CATEGORY_IDS: CATEGORY_IDS,
+    KOREA_ONLY: KOREA_ONLY,
+    isKoreaOnly: isKoreaOnly,
+    regionApps: regionApps,
+    koreaApps: koreaApps,
     filterApps: filterApps,
     sortApps: sortApps,
     matchesSearch: matchesSearch,

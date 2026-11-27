@@ -249,6 +249,18 @@ select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .result { font-size: 13px; color: var(--muted-2); }
 .result b { color: var(--ink); font-weight: 800; }
 
+/* Region row: the Korea-only nine stay folded away on the English shelf. */
+.filters__row--region { align-items: center; justify-content: space-between; }
+.filters__row--region[hidden] { display: none; }
+.toggle__flag { font-size: 13px; line-height: 1; }
+.toggle b { font-weight: 700; color: var(--muted-2); }
+.toggle.is-on b { color: var(--accent-ink); }
+.result--hint { margin: 0; font-size: 12.5px; text-align: right; }
+@media (max-width: 720px) {
+  .filters__row--region { align-items: flex-start; }
+  .result--hint { text-align: left; }
+}
+
 /* ── grid ────────────────────────────────────────────────────────────── */
 .grid {
   display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));

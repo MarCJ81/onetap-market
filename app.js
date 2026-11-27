@@ -22,6 +22,7 @@
     byok: false,
     freeAi: false,
     sort: 'fresh',
+    koreaTools: false,
     submitTab: 'new'
   };
 
@@ -48,8 +49,49 @@
     return obj[lang] || obj.en || obj.ko || '';
   }
 
+  /* ?lang=ko|ko-KR|en|en-US wins over storage and the browser, so a link can
+     carry the shelf language the way portal-hub already does. */
+  function normalizedLang(value) {
+    var v = String(value || '').toLowerCase();
+    if (v.indexOf('ko') === 0) return 'ko';
+    if (v.indexOf('en') === 0) return 'en';
+    return null;
+  }
+
   function apps() {
     return (data && data.apps) || [];
+  }
+
+  /* English hides the nine Korea-only apps until the visitor asks for them;
+     Korean always shows the whole shelf. */
+  function showKorea() {
+    return state.lang === 'ko' || state.koreaTools;
+  }
+
+  function visibleApps() {
+    return Core.regionApps(apps(), state.lang, showKorea());
+  }
+
+  var noMap = {};
+
+  function renderNoMap(list) {
+    noMap = {};
+    list.slice().sort(function (a, b) { return a.no - b.no; }).forEach(function (a, i) {
+      noMap[a.id] = i + 1;
+    });
+  }
+
+  function filterState() {
+    return {
+      lang: state.langFilter,
+      category: state.category,
+      search: state.search,
+      noSignup: state.noSignup,
+      free: state.free,
+      byok: state.byok,
+      freeAi: state.freeAi,
+      sort: state.sort
+    };
   }
 
   function categories() {
@@ -116,11 +158,15 @@
 
   /* ── rendering: stats ───────────────────────────────────────────────── */
   function renderStats() {
-    var s = Core.stats(apps(), data && data.meta);
+    var s = Core.stats(visibleApps(), data && data.meta);
     $('#statApps').textContent = s.total;
     $('#statPass').textContent = s.passRate + '%';
     $('#statPassNote').textContent = s.live + '/' + s.total;
     $('#statNoSignup').textContent = s.noSignup;
+    var note = $('#statAppsNote');
+    if (note) {
+      note.textContent = showKorea() ? t('stats.appsNote') : t('stats.appsNoteGlobal');
+    }
     $('#statCheck').textContent = Core.formatStamp(s.lastFullCheck, state.lang).replace(' KST', '');
     $('#heroCount').textContent = s.total;
     $('#resultTotal').textContent = s.total;
@@ -133,8 +179,9 @@
 
   /* ── rendering: category chips ──────────────────────────────────────── */
   function renderChips() {
-    var counts = Core.appCounts(apps(), categories());
-    var total = apps().length;
+    var shelf = visibleApps();
+    var counts = Core.appCounts(shelf, categories());
+    var total = shelf.length;
     var html = [
       '<button type="button" class="chip' + (state.category === 'all' ? ' is-on' : '') +
         '" data-cat="all" aria-pressed="' + (state.category === 'all') + '">' +
@@ -197,7 +244,7 @@
         '<span class="card__top"><span class="card__cat">' + esc(cat) + '</span>' +
           '<span class="card__topright">' +
             '<span class="card__ver" title="' + esc(t('ver.badge')) + '">' + esc(Core.appVersion(app)) + '</span>' +
-            '<span class="card__no">' + String(app.no).padStart(2, '0') + '</span>' +
+            '<span class="card__no">' + String(noMap[app.id] || app.no).padStart(2, '0') + '</span>' +
           '</span></span>' +
         '<span class="card__name">' + esc(name) + '</span>' +
         '<span class="card__short">' + esc(short) + '</span>' +
@@ -216,25 +263,31 @@
   }
 
   function renderGrid() {
-    var list = Core.filterApps(apps(), {
-      lang: state.langFilter,
-      category: state.category,
-      search: state.search,
-      noSignup: state.noSignup,
-      free: state.free,
-      byok: state.byok,
-      freeAi: state.freeAi,
-      sort: state.sort
-    });
+    var shelf = visibleApps();
+    renderNoMap(shelf);
+    var list = Core.filterApps(shelf, filterState());
     $('#cardGrid').innerHTML = list.map(cardHtml).join('');
     $('#resultCount').textContent = list.length;
+    $('#resultTotal').textContent = shelf.length;
     $('#emptyState').hidden = list.length > 0;
+    /* A search in English can match only the hidden Korea shelf — say so and
+       offer the toggle instead of a bare "nothing matches". */
+    var hiddenKorea = 0;
+    if (state.lang === 'en' && !showKorea()) {
+      hiddenKorea = Core.filterApps(Core.koreaApps(apps()), filterState()).length;
+    }
     /* A category nobody has listed in yet is not a failed filter — it is the
        shelf waiting for its first app, so it gets a submission CTA instead. */
-    var counts = Core.appCounts(apps(), categories());
+    var counts = Core.appCounts(shelf, categories());
     var emptyCategory = state.category !== 'all' && (counts[state.category] || 0) === 0;
-    $('#emptyFilter').hidden = emptyCategory;
+    var koreaHint = list.length === 0 && hiddenKorea > 0;
+    $('#emptyKorea').hidden = !koreaHint;
+    $('#emptyFilter').hidden = emptyCategory || koreaHint;
     $('#emptyCategory').hidden = !emptyCategory;
+    var koreaBtn = $('#toggleKorea');
+    $('#regionRow').hidden = state.lang !== 'en';
+    koreaBtn.classList.toggle('is-on', showKorea());
+    koreaBtn.setAttribute('aria-pressed', String(showKorea()));
     $$('[data-langfilter]').forEach(function (b) {
       var on = b.getAttribute('data-langfilter') === state.langFilter;
       b.classList.toggle('is-on', on);
@@ -825,6 +878,16 @@
     $('#toggleByok').addEventListener('click', function () { state.byok = !state.byok; renderGrid(); });
     $('#toggleFreeAi').addEventListener('click', function () { state.freeAi = !state.freeAi; renderGrid(); });
 
+    /* English shelf: the Korea-only nine stay folded away until asked for. */
+    function toggleKorea() {
+      state.koreaTools = !state.koreaTools;
+      renderChips();
+      renderGrid();
+      renderStats();
+    }
+    $('#toggleKorea').addEventListener('click', toggleKorea);
+    $('#emptyKoreaBtn').addEventListener('click', toggleKorea);
+
     var searchTimer = null;
     $('#searchInput').addEventListener('input', function (e) {
       var v = e.target.value;
@@ -848,11 +911,13 @@
       state.free = false;
       state.byok = false;
       state.freeAi = false;
+      state.koreaTools = false;
       state.sort = 'fresh';
       $('#searchInput').value = '';
       $('#sortSelect').value = 'fresh';
       renderChips();
       renderGrid();
+      renderStats();
     }
     $('#resetFilters').addEventListener('click', reset);
     $('#emptyReset').addEventListener('click', reset);
@@ -923,15 +988,21 @@
   function boot() {
     var stored = null;
     try { stored = localStorage.getItem('otm.lang'); } catch (e) { /* ignore */ }
-    state.lang = stored && I18N[stored] ? stored : Core.detectLang(navigator.language);
+    var qs = new URLSearchParams(location.search);
+    var asked = normalizedLang(qs.get('lang'));
+    state.lang = asked || (stored && I18N[stored] ? stored : Core.detectLang(navigator.language));
+    if (asked) {
+      try { localStorage.setItem('otm.lang', asked); } catch (e) { /* private mode */ }
+    }
 
     applyI18n();
+    var count = $('#koreaCount');
+    if (count) count.textContent = '(' + Core.KOREA_ONLY.length + ')';
     renderChips();
     renderStats();
     renderGrid();
     bind();
 
-    var qs = new URLSearchParams(location.search);
     var deep = qs.get('app');
     if (deep) openDetail(deep);
   }

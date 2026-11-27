@@ -11,7 +11,7 @@
       'A market of web apps that load without an account. Every listing shows a live HTTP check, no-signup status, a free or bring-your-own-key price and its own version history, refreshed daily.',
     'meta.ogTitle': 'OneTap Market — apps you can use in one tap',
     'meta.ogDescription':
-      '31 listings, each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card.',
+      'A shelf of global web apps — each one checked for a live server, no signup requirement and a free or BYOK price, with version history and public feedback on every card. The nine Korea-only tools open with one toggle.',
 
     'brand.name': 'OneTap Market',
     'brand.sub': 'Verified no-signup web apps',
@@ -53,6 +53,7 @@
 
     'stats.apps': 'Listed apps',
     'stats.appsNote': 'Korean and global',
+    'stats.appsNoteGlobal': 'Global shelf · Korea 9 on toggle',
     'stats.pass': 'Live pass rate',
     'stats.passNote': 'HTTP 200 right now',
     'stats.noSignup': 'No-signup apps',
@@ -72,6 +73,10 @@
     'filter.free': '100% free',
     'filter.byok': 'BYOK Pro',
     'filter.freeAi': 'Free AI taste',
+    'filter.region': 'Region',
+    'filter.korea': 'Korea-specific tools',
+    'filter.koreaAria': 'Show or hide the nine Korea-specific tools',
+    'filter.regionHint': 'Korean-market tools stay folded away on the English shelf.',
     'filter.search': 'Search',
     'filter.searchPlaceholder': 'Search name, category or what it does',
     'filter.sort': 'Sort',
@@ -94,6 +99,9 @@
     'empty.catTitle': 'No apps in this section yet.',
     'empty.catBody': 'Be the first one on this shelf — submit your app and it goes live here once the checker sees it open. No listing fee.',
     'empty.catCta': 'Submit the first app',
+    'empty.koreaTitle': 'That one sits on the Korea shelf',
+    'empty.koreaBody': 'Year-end tax, payslips, HWPX, Korean ad law, local prices and the two Korean SEO studios are hidden while you browse in English.',
+    'empty.koreaCta': 'Show Korea-specific tools (9)',
 
     'modal.close': 'Close',
     'modal.about': 'What it does',
@@ -303,6 +311,7 @@
 
     'stats.apps': '등록 앱',
     'stats.appsNote': '국내·글로벌',
+    'stats.appsNoteGlobal': '글로벌 진열대 · 한국 9종은 접어 둠',
     'stats.pass': '생존 통과율',
     'stats.passNote': '지금 HTTP 200',
     'stats.noSignup': '가입 없는 앱',
@@ -322,6 +331,10 @@
     'filter.free': '완전 무료',
     'filter.byok': 'BYOK Pro',
     'filter.freeAi': '무료 AI 맛보기',
+    'filter.region': '지역',
+    'filter.korea': '한국 전용 도구',
+    'filter.koreaAria': '한국 전용 도구 9종을 보거나 숨깁니다',
+    'filter.regionHint': '영문 진열대에서는 한국 전용 도구를 점어 둡니다.',
     'filter.search': '검색',
     'filter.searchPlaceholder': '이름·카테고리·하는 일로 찾기',
     'filter.sort': '정렬',
@@ -344,6 +357,9 @@
     'empty.catTitle': '아직 등록된 앱이 없어요.',
     'empty.catBody': '첫 번째 앱을 신청해 보세요! 검증만 통과하면 이 자리에 바로 올라갑니다. 등록비는 없습니다.',
     'empty.catCta': '첫 앱 신청하기',
+    'empty.koreaTitle': '한국 전용 도구에 있습니다',
+    'empty.koreaBody': '연말정산·급여명세서·HWPX·한국 표시광고법·국내 시세·네이버·스마트스토어 SEO 도구는 영문 진열대에서 숨겨져 있습니다.',
+    'empty.koreaCta': '한국 전용 도구 9종 보기',
 
     'modal.close': '닫기',
     'modal.about': '무엇을 하는 앱인가',

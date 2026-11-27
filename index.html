@@ -127,7 +127,7 @@
     <div class="stat">
       <span class="stat__label" data-i18n="stats.apps">Listed apps</span>
       <strong class="stat__value" id="statApps">31</strong>
-      <span class="stat__note" data-i18n="stats.appsNote">Korean and global</span>
+      <span class="stat__note" id="statAppsNote" data-i18n="stats.appsNote">Korean and global</span>
     </div>
     <div class="stat stat--accent">
       <span class="stat__label" data-i18n="stats.pass">Live pass rate</span>
@@ -180,6 +180,16 @@
       </div>
     </div>
 
+    <div class="filters__row filters__row--region" id="regionRow">
+      <div class="field">
+        <span class="field__label" data-i18n="filter.region">Region</span>
+        <div class="toggles">
+          <button type="button" class="toggle" id="toggleKorea" aria-pressed="false" data-i18n-aria="filter.koreaAria"><span class="toggle__dot" aria-hidden="true"></span><span class="toggle__flag" aria-hidden="true">🇰🇷</span><span data-i18n="filter.korea">Korea-specific tools</span> <b id="koreaCount">(9)</b></button>
+        </div>
+      </div>
+      <p class="result result--hint" data-i18n="filter.regionHint">Korean-market tools stay folded away on the English shelf.</p>
+    </div>
+
     <div class="filters__row filters__row--badges">
       <div class="field">
         <span class="field__label" data-i18n="filter.badges">Verification</span>
@@ -199,7 +209,13 @@
   <section class="wrap" id="grid">
     <div class="grid" id="cardGrid" aria-label="App listings" data-i18n-aria="app.ariaGrid"></div>
     <div class="empty" id="emptyState" hidden>
-      <div class="empty__block" id="emptyFilter">
+      <div class="empty__block" id="emptyKorea" hidden>
+        <span class="empty__mark" aria-hidden="true">🇰🇷</span>
+        <strong data-i18n="empty.koreaTitle">That one sits on the Korea shelf</strong>
+        <p data-i18n="empty.koreaBody">Year-end tax, payslips, HWPX, Korean ad law, local prices and the two Korean SEO studios are hidden while you browse in English.</p>
+        <button type="button" class="btn btn--ghost" id="emptyKoreaBtn" data-i18n="empty.koreaCta">Show Korea-specific tools (9)</button>
+      </div>
+      <div class="empty__block" id="emptyFilter" hidden>
         <strong data-i18n="empty.title">Nothing matches that filter</strong>
         <p data-i18n="empty.body">Try another category, or clear the search and the badge toggles.</p>
         <button type="button" class="btn btn--ghost" id="emptyReset" data-i18n="empty.reset">Clear filters</button>
